@@ -65,7 +65,19 @@ void loop()
 
       
   ```  
-  
+  ![Working circuit setup - Power off]()
+  ![Working sircuit setup - Power on]()
+
+  ## Useful utilities and commands:   
+  ```
+  platformio lib install "AM2302-Sensor"
+  ```
+  ```
+  rsync -avp oweley@192.168.1.224/temperature_AM2302 --mkpath
+  ```
+  ```
+  pio run -t upload --upload-port /dev/ttyUSB0
+  ```
 
 ## LM35DZ Temperature Sensor   
 
