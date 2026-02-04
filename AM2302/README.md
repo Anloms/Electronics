@@ -79,7 +79,8 @@ void loop()
   pio run -t upload --upload-port /dev/ttyUSB0
   ```
 
-## LM35DZ Temperature Sensor   
+# Useful links   
+[AM2302 Datasheet](https://cdn-shop.adafruit.com/datasheets/Digital+humidity+and+temperature+sensor+AM2302.pdf)   
 
 # Troubleshooting
 When using Rapbery Pi as an intermediary between Arduino, test whether Ardino is responsive:  
