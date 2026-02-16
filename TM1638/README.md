@@ -1,6 +1,11 @@
 # TM1638   
 ## Instructions  
 ```
+#define STB_PIN  4
+#define CLK_PIN  2
+#define DIO_PIN  3
+```   
+```
         //define pins as outputs
         pinMode(STB_PIN, OUTPUT);
         pinMode(CLK_PIN, OUTPUT);
