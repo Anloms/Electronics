@@ -17,7 +17,7 @@
   Feeling adventurous? There’s a bonus challenge waiting for you:  
   - Turn the LEDs into a progress bar that fills up as the temperature rises toward a target. It’s a great way to add a little visual flair to your project! 
   
-  ## Components we are using - to each add picture and details about it  
+  ## Components we are using   
   
 |  | Component | Description | Image | Details |
 | :--: | :---: | :---: | :---: | :-----: |
@@ -30,10 +30,9 @@
 |7 | Resistor  | A component that limits the flow of electricity. It helps control things like LED brightness and protects sensitive parts from getting too much current. | <img alt="Various resistors" src="https://github.com/Anloms/Electronics/blob/main/resistors.png"/> | [Learn more about Resistors ](#Resistors) |
 |8 | Raspberry Pi   | A full mini-computer (with an operating system!) that can do everything from running code to browsing the web. In this workshop, it serves as the intermediary between the school's machine and Arduino. |<img alt="Raspberry Pi 3, model B+" src="https://github.com/Anloms/Electronics/blob/main/Pi_3.png"/>  | [Learn more about Raspberry Pi ](#Raspberry-Pi) |  
 
-  
-  ## Raspberry - Arduino relationship  
-  ## Flow 1 - easy & hard with collapsible parts, hints
-  ## Flow 2 - easy & hard with collapsible parts, hints 
+# Flow part 1 easy & hard with collapsible parts, hints
+
+    
 <details>
 
 <summary>Hint</summary>
@@ -64,7 +63,34 @@ PORT="/dev/ttyUSB0" && sudo stty -F $PORT 9600 raw -echo 2>&1 && echo $?
 If result is `0` then Arduino indeed is responsive.
 
 # Components - the closer look    
-  ## Arduino Nano  
+
+  ## Arduino Nano 
+  The Nano is small — only 45 x 18 mm — which means it fits perfectly on a breadboard right alongside your other components.
+  Arduino Nano's brain is ATmega328P Processor, running at 16 MHz . It's reliable, well-supported, and perfect for learning and prototyping.
+    
+  Memory Specs for Your Code:  
+  - 32 KB of flash memory to store your program (like a notebook for your instructions).  
+  - 2 KB of SRAM to hold temporary data while running (like a whiteboard for quick notes).  
+  - 1 KB of EEPROM to save data even when power is off (like a tiny sticky note that survives a power outage)  
+    
+  Nano has 30 available connections (pins):   
+  - 14 digital I/O pins — for connecting LEDs, buttons, and sensors.   
+  - 8 analog input pins — for reading variable signals (like temperature sensors).  
+  - 6 PWM pins — for dimming LEDs or controlling motors smoothly.  
+  - 2 reset pins - for restarting the microcontroller, clearing the temporary memory (RAM) and running the code from the beginning.  
+    
+   Communication Skills:   
+   - I²C — talks to sensors like your BME280 (only needs 2 wires!).   
+   - SPI — faster communication for displays and modules.   
+   - Serial (UART) — chats with your computer to debug or send data.   
+    
+   What Can You Build With It?   
+   - Sensors & Monitoring - Weather stations, air quality monitors, soil moisture sensors for plants.  
+   - Wearables -	Tiny enough to sew into clothing or embed in accessories.  
+   - Robotics -	Control small robots, servos, and motors.  
+   - Interactive Art	- Light displays, sound-reactive installations, touch-sensitive sculptures.  
+   - Automation - Smart home gadgets, automatic plant waterers, pet feeders.  
+    
   ## TM1638  
   ## BME280  
   ## Led Diodes  
