@@ -116,15 +116,19 @@ With the hardware connected, let's program the Arduino to talk to the sensor and
 > Why we need it: These libraries contain all the specific commands needed to communicate with the BME280, so we don't have to write them from scratch.  
 
 
-
+## $\Large{\textbf{\color{black}{Choose the level of difficulty:}}}$   
+<br>
+<img alt="choose wisely" src="https://github.com/Anloms/Electronics/blob/main/Resources/choose_wisely.png"/>  
+<br>
 
 <details><summary> 
  
- ## $\Large{\textbf{\color{red}{Guide to writing the software yourself}}}$
- </summary></details>
+## $\Large{\textbf{\color{red}{Guide to writing the software yourself}}}$ 
+</summary></details>
+
 <details><summary> 
  
- ## $\Large{\textbf{\color{blue}{Just copy the code}}}$
+## $\Large{\textbf{\color{blue}{Just copy the code}}}$
 </summary>
  
 ### $\Large{\textbf{\color{black}{4. BME280 code}}}$  
@@ -175,6 +179,7 @@ void loop()
 
 
 
+
 <br>
 
   ## Useful utilities and commands:   
@@ -187,8 +192,7 @@ void loop()
   ```bash
   pio run -t upload --upload-port /dev/ttyUSB0
   ```
-
-  ## LM35DZ Temperature Sensor   
+  
 
 # Troubleshooting
 When using Rapbery Pi as an intermediary between Arduino, test whether Ardino is responsive:  
