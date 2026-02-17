@@ -3,6 +3,21 @@
 
 <br>
 
+> [!NOTE]
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
  # $\large{\textsf{\color{black}{Objective}}}$  
  <br>
   
@@ -63,11 +78,16 @@
 
 ### $\Large{\textbf{\color{#f48522}{3. Connecting the BME280 Sensor}}}$  
   Now for the star of the show. We'll connect the sensor using a communication method called I2C, which only uses two wires.   
+        
+   > [!Important]
+   > [Click me to see BME280 data](#BME280)  or [me to see Arduino Nano Pin-out](#Arduino-Nano)  
+   <br>
+   
   - Identify the Pins: Look at your BME280 sensor. You'll need to identify four pins: 
       - VIN (or VCC),
       - GND
       - SCL (Serial Clock)
-      - and SDA (Serial Data)
+      - and SDA (Serial Data)  
   - Make the Connections:  
       - Power (VIN): Use a jumper wire to connect the VIN pin on the sensor to the red (+) power rail on your breadboard.  
       - Ground (GND): Use a jumper wire to connect the GND pin on the sensor to the blue (-) ground rail on your breadboard.  
@@ -81,10 +101,13 @@ With the hardware connected, let's program the Arduino to talk to the sensor and
   Install the Required Libraries. Open the Arduino IDE on your computer. Go to Sketch > Include Library > Manage Libraries... In the Library Manager, search for "Adafruit BME280".
   When prompted, also install any dependencies, especially "Adafruit Unified Sensor".  
   
+  
 > [!NOTE]
 > Why we need it: These libraries contain all the specific commands needed to communicate with the BME280, so we don't have to write them from scratch.
 
 
+
+<br>
 
   ## Useful utilities and commands:   
   ```bash
