@@ -343,4 +343,5 @@ If result is `0` then Arduino indeed is responsive.
  <summary>$\LARGE{\textsf{\color{black}{Raspberry Pi}}}$</summary><br><br>
 
  ## $\Large{\textsf{\color{black}{Raspberry Pi}}}${: #pi}
+ [🔗 Quick link to Arduino Nano](#pi)
 </details>
