@@ -97,6 +97,16 @@
 
 ### $\Large{\textbf{\color{#f48522}{4. The Software - Reading the Sensor}}}$     
 With the hardware connected, let's program the Arduino to talk to the sensor and show us what it sees.  
+> [!IMPORTANT]
+> Arduino code, including the code we write in PlatformIO, is structured around a simple but powerful execution model using two mandatory functions.
+>
+> - void setup(): This function is called once when the microcontroller starts or resets. It's designed for one-time initializations. 
+>You place code here to configure pin modes (like setting our LED pin as an OUTPUT), initialize serial communication (Serial.begin), and verify that your sensor
+>is connected and responding (bme.begin()). It ensures the system is in a known state before beginning its main task.
+>
+> - void loop() : After setup() finishes, the loop() function is called repeatedly. As the name suggests, it runs in an infinite loop. This is where the main logic of your program resides—reading sensor values, >making decisions (like our if statement for the LED), and updating outputs. This structure is perfect for embedded systems that need to continuously monitor and react to their environment.
+
+<br>
 
   Install the Required Libraries. Open the Arduino IDE on your computer. Go to Sketch > Include Library > Manage Libraries... In the Library Manager, search for "Adafruit BME280".
   When prompted, also install any dependencies, especially "Adafruit Unified Sensor".  
