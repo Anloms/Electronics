@@ -71,37 +71,72 @@ If result is `0` then Arduino indeed is responsive.
   Memory Specs for Your Code:  
   - 32 KB of flash memory to store your program (like a notebook for your instructions).  
   - 2 KB of SRAM to hold temporary data while running (like a whiteboard for quick notes).  
-  - 1 KB of EEPROM to save data even when power is off (like a tiny sticky note that survives a power outage)  
-    
-  ### Pin Breakdown (Arduino Nano has 30 pins)      
-  <code style="color : purple"> Digital I/O Pins (0-13)</code>  
-  <code style="color : blue">text</code>    
-  
-  #### Digital I/O pins
-  These 14 pins are the workhorses of the Arduino. They are designed to handle binary signals (on or off).  
-    - General Purpose:  You can configure them as INPUT (to read if a button is pressed, 5V or 0V) or OUTPUT (to turn an LED on or off, or control a relay).
-    - PWM (~Pins 3, 5, 6, 9, 10, 11)  
+  - 1 KB of EEPROM to save data even when power is off (like a tiny sticky note that survives a power outage)    
+<br><br><br>
+
+
+$$
+{\color{purple}\huge \text{Pin Breakdown}}
+$$
+
+<h1 style="color : yellow">Pin Breakdown</h1>
+<h1 style="color: yellow;">Pin Breakdown</h1>
+
+<br>
+
+$$
+{\color{RebeccaPurple}\huge \text{Digital I/O Pins}}
+$$
+
+**These 14 pins are the workhorses of the Arduino. They are designed to handle binary signals (on or off).**
+- ***General Purpose:***  
+  You can configure them as INPUT (to read if a button is pressed, 5V or 0V) or OUTPUT (to turn an LED on or off, or control a relay).    
+- ***PWM (~Pins 3, 5, 6, 9, 10, 11)***  
       While standard outputs can only be fully ON (5V) or OFF (0V), these specific pins can simulate an analog output using a technique called Pulse-Width Modulation (PWM). 
       They output a square wave that switches on and off so fast that it mimics a voltage between 0 and 5V.    
-      `Example: This is used to dim LEDs or control the speed of motors.`  
-  #### Analog Input Pins (A0-A7)   
-  These pins are designed to read varying voltages from sensors (like temperature sensors, potentiometers, or light sensors).
-    - 10-bit ADC: They use an Analog-to-Digital Converter. The "10-bit" means they map input voltages between 0 and 5V into integer values between 0 and 1023.  
-    - A6 and A7 Restriction: On some boards (like the Nano), A6 and A7 are strictly analog input pins. Unlike A0 through A5, they cannot be used as digital input/output pins.  
+`Example: This is used to dim LEDs or control the speed of motors.`  
 
-  #### Power Pins  
-  These pins are used to provide power to the Arduino board itself or to power external components (sensors/motors).  
-    - VIN (7-12V): This is the input voltage pin. If you are using an unregulated power supply (like a battery), you connect the positive lead here. The board has a voltage regulator that converts this down to the 5V needed for operation.  
-    - 5V: This pin outputs a regulated 5V. It can be used to power 5V sensors. If you are powering the board via USB, this pin will output power. If you supply clean 5V directly to this pin, you can bypass the onboard regulator.   
-    - 3.3V: This outputs a regulated 3.3V for low-voltage components.   
-    -  GND (Ground): The common return path for electricity. Having multiple GND pins makes wiring easier, allowing you to keep your circuits tidy.   
-    
-  #### Specialized Pins   
-  These pins handle specific functions related to the microcontroller's operation.    
-    - RST (Reset): There are usually two of these. Briefly connecting this pin to GND resets the microcontroller. This restarts your sketch from the beginning. It's useful if your code gets stuck or you want to restart the program without unplugging the power.   
-    - AREF (Analog Reference): This pin allows you to set a custom maximum voltage for the analog inputs. By default, analogRead() assumes 5V equals a value of 1023. If you connect a voltage (e.g., 2.5V) to the AREF pin and configure the software, the ADC will use that voltage as its reference, providing higher resolution for sensors that output lower voltages.   
+<br><br>
 
-    
+
+$$
+{\color{RebeccaPurple}\huge \text{Analog Input Pins (A0-A7)}}
+$$
+
+**These pins are designed to read varying voltages from sensors (like temperature sensors, potentiometers, or light sensors).**   
+
+- ***10-bit ADC:*** They use an Analog-to-Digital Converter. The "10-bit" means they map input voltages between 0 and 5V into integer values between 0 and 1023.  
+- ***A6 and A7*** Restriction: On some boards (like the Nano), A6 and A7 are strictly analog input pins. Unlike A0 through A5, they cannot be used as digital input/output pins.  
+
+$$
+{\color{RebeccaPurple}\huge\text{Power Pins}}
+$$
+
+**These pins are used to provide power to the Arduino board itself or to power external components (sensors/motors).**  
+
+- ***VIN (7-12V):*** 
+  This is the input voltage pin. If you are using an unregulated power supply (like a battery), you connect the positive lead here. The board has a voltage regulator that converts this down to the 5V needed for operation.  
+- ***5V:*** 
+  This pin outputs a regulated 5V. It can be used to power 5V sensors. If you are powering the board via USB, this pin will output power. If you supply clean 5V directly to this pin, you can bypass the onboard regulator.   
+- ***3.3V:*** 
+  This outputs a regulated 3.3V for low-voltage components.   
+- ***GND (Ground):*** 
+  The common return path for electricity. Having multiple GND pins makes wiring easier, allowing you to keep your circuits tidy.   
+
+<br>
+
+$$
+{\color{RebeccaPurple}\huge\text{Specialized Pins}}
+$$
+
+**These pins handle specific functions related to the microcontroller's operation.**
+
+***- RST (Reset):*** 
+  There are usually two of these. Briefly connecting this pin to GND resets the microcontroller. This restarts your sketch from the beginning. It's useful if your code gets stuck or you want to restart the program without unplugging the power.   
+***- AREF (Analog Reference):*** 
+  This pin allows you to set a custom maximum voltage for the analog inputs. By default, analogRead() assumes 5V equals a value of 1023. If you connect a voltage (e.g., 2.5V) to the AREF pin and configure the software, the ADC will use that voltage as its reference, providing higher resolution for sensors that output lower voltages.   
+
+ <br><br><br>   
     
    Communication Skills:   
    - I²C — talks to sensors like your BME280 (only needs 2 wires!).   
