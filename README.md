@@ -210,7 +210,7 @@ If result is `0` then Arduino indeed is responsive.
   <summary>$\LARGE{\textsf{\color{black}{Arduino Nano}}}$</summary>
  <br><br>
  
- ## $\Large{\textsf{\color{black}{Arduino Nano}}}$  
+ ## $\Large{\textsf{\color{black}{##Arduino Nano}}}$  
  
   Arduino Nano is small — only 45 x 18 mm — which means it fits perfectly on a breadboard right alongside your other components.
   Arduino Nano's brain is ATmega328P Processor, running at 16 MHz . It's reliable, well-supported, and perfect for learning and prototyping.
