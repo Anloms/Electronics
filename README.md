@@ -62,9 +62,13 @@ PORT="/dev/ttyUSB0" && sudo stty -F $PORT 9600 raw -echo 2>&1 && echo $?
 ```
 If result is `0` then Arduino indeed is responsive.
 
-# Components - the closer look    
+<br>
 
-  ## Arduino Nano 
+# $\LARGE{\textsf{\color{black}{Components - the closer look}}}$   
+
+<br><br>
+
+## $\LARGE{\textsf{\color{black}{Arduino Nano}}}$ 
   The Nano is small — only 45 x 18 mm — which means it fits perfectly on a breadboard right alongside your other components.
   Arduino Nano's brain is ATmega328P Processor, running at 16 MHz . It's reliable, well-supported, and perfect for learning and prototyping.
     
@@ -75,20 +79,14 @@ If result is `0` then Arduino indeed is responsive.
 <br><br><br>
 
 
-$$
-{\color{purple}\huge \text{Pin Breakdown}}
-$$
+## $\LARGE{\textsf{\color{#f5750e}{Pin Breakdown}}}$ 
 
-<h1 style="color : yellow">Pin Breakdown</h1>
-<h1 style="color: yellow;">Pin Breakdown</h1>
+<br><br>
 
-<br>
+### $\LARGE{\text{\color{#326a95}{Digital I/O Pin}}}$
+### $\large{\text{\color{#326a95}{These 14 pins are designed to handle binary signals (on or off)}}}$
 
-$$
-{\color{RebeccaPurple}\huge \text{Digital I/O Pins}}
-$$
 
-**These 14 pins are the workhorses of the Arduino. They are designed to handle binary signals (on or off).**
 - ***General Purpose:***  
   You can configure them as INPUT (to read if a button is pressed, 5V or 0V) or OUTPUT (to turn an LED on or off, or control a relay).    
 - ***PWM (~Pins 3, 5, 6, 9, 10, 11)***  
@@ -96,23 +94,19 @@ $$
       They output a square wave that switches on and off so fast that it mimics a voltage between 0 and 5V.    
 `Example: This is used to dim LEDs or control the speed of motors.`  
 
-<br><br>
+<br>
 
+### $\LARGE{\text{\color{#326a95}{Analog Input Pins (A0-A7)}}}$
+### $\large{\text{\color{#326a95}{These pins are designed to read varying voltages from sensors (eg. temperature sensors)}}}$
 
-$$
-{\color{RebeccaPurple}\huge \text{Analog Input Pins (A0-A7)}}
-$$
-
-**These pins are designed to read varying voltages from sensors (like temperature sensors, potentiometers, or light sensors).**   
 
 - ***10-bit ADC:*** They use an Analog-to-Digital Converter. The "10-bit" means they map input voltages between 0 and 5V into integer values between 0 and 1023.  
 - ***A6 and A7*** Restriction: On some boards (like the Nano), A6 and A7 are strictly analog input pins. Unlike A0 through A5, they cannot be used as digital input/output pins.  
 
-$$
-{\color{RebeccaPurple}\huge\text{Power Pins}}
-$$
+<br>
 
-**These pins are used to provide power to the Arduino board itself or to power external components (sensors/motors).**  
+### $\LARGE{\text{\color{#326a95}{Power Pins}}}$
+### $\large{\text{\color{#326a95}{These pins are used to provide power to the Arduino board itself or to power external components}}}$
 
 - ***VIN (7-12V):*** 
   This is the input voltage pin. If you are using an unregulated power supply (like a battery), you connect the positive lead here. The board has a voltage regulator that converts this down to the 5V needed for operation.  
@@ -125,11 +119,9 @@ $$
 
 <br>
 
-$$
-{\color{RebeccaPurple}\huge\text{Specialized Pins}}
-$$
+### $\LARGE{\textsf{\color{#326a95}{Specialized Pins}}}$  
+### $\large{\textsf{\color{#326a95}{These pins handle specific functions related to the microcontroller's operation}}}$  
 
-**These pins handle specific functions related to the microcontroller's operation.**
 
 ***- RST (Reset):*** 
   There are usually two of these. Briefly connecting this pin to GND resets the microcontroller. This restarts your sketch from the beginning. It's useful if your code gets stuck or you want to restart the program without unplugging the power.   
