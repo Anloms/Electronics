@@ -81,7 +81,7 @@ If result is `0` then Arduino indeed is responsive.
 
 ## $\LARGE{\textsf{\color{#f5750e}{Pin Breakdown}}}$   
 
-<img alt="Arduino Nano Pinout" src=""/>
+<img alt="Arduino Nano Pinout" src="https://github.com/Anloms/Electronics/blob/main/Resources/Nano_pinout.png"/>
 
 <br><br>
 
