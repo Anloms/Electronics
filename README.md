@@ -51,7 +51,7 @@
 |5 | Jumper Wires - Type B | Often female-to-female or male-to-male wires, great for connecting sensors and modules (like the BME280) to the Arduino without soldering. | <img alt="Various male-to-male Jumper Wires" src="https://github.com/Anloms/Electronics/blob/main/Jumper_wires_B.png"/>   | [Learn more about Jumper Wires ](#jumper) |
 |6 |  Led Diode  | 		A Light Emitting Diode — a tiny light that lights up when electricity flows through it. It's energy-efficient, colourful, and perfect for visual feedback in your circuits.|<img alt="Various Led Diodes" src="https://github.com/Anloms/Electronics/blob/main/led_diode.png"/>  | [Learn more about Led Diodes ](#Led-Diodes) |
 |7 | Resistor  | A component that limits the flow of electricity. It helps control things like LED brightness and protects sensitive parts from getting too much current. | <img alt="Various resistors" src="https://github.com/Anloms/Electronics/blob/main/resistors.png"/> | [Learn more about Resistors ](#Resistors) |
-|8 | Raspberry Pi   | A full mini-computer (with an operating system!) that can do everything from running code to browsing the web. In this workshop, it serves as the intermediary between the school's machine and Arduino. |<img alt="Raspberry Pi 3, model B+" src="https://github.com/Anloms/Electronics/blob/main/Pi_3.png"/>  | [Learn more about Raspberry Pi ](#Raspberry-Pi) |  
+|8 | Raspberry Pi   | A full mini-computer (with an operating system!) that can do everything from running code to browsing the web. In this workshop, it serves as the intermediary between the school's machine and Arduino. |<img alt="Raspberry Pi 3, model B+" src="https://github.com/Anloms/Electronics/blob/main/Pi_3.png"/>  | [Learn more about Raspberry Pi ](#raspberry-pi) |  
 
 <br><br>
 
@@ -210,7 +210,7 @@ If result is `0` then Arduino indeed is responsive.
   <summary>$\LARGE{\textsf{\color{black}{Arduino Nano}}}$</summary>
  <br><br>
  
- ## $\Large{\textsf{\color{black}{##Arduino Nano}}}${: #arduino-nano}
+ ## $\Large{\textsf{\color{black}{##Arduino Nano}}}$ {: #arduino-nano}
  
   Arduino Nano is small — only 45 x 18 mm — which means it fits perfectly on a breadboard right alongside your other components.
   Arduino Nano's brain is ATmega328P Processor, running at 16 MHz . It's reliable, well-supported, and perfect for learning and prototyping.
@@ -340,7 +340,7 @@ If result is `0` then Arduino indeed is responsive.
 </details>
 
 <details>
- <summary># $\LARGE{\textsf{\color{black}{Raspberry Pi}}}$</summary><br><br>
+ <summary id="raspberry-pi"> $\LARGE{\textsf{\color{black}{Raspberry Pi}}}$</summary><br><br>
 
  ## $\Large{\textsf{\color{black}{Raspberry Pi}}}
 </details>
