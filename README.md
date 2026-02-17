@@ -1,5 +1,6 @@
 
 # Guide
+
   ## Objective 
   We’ll get hands-on with the BME280 sensor — a cool little device that measures temperature, humidity, and air pressure
   — and the TM1638 controller,  which lets you control LEDs and a built-in display. Along the way, you’ll learn how these components
@@ -15,10 +16,18 @@
   
   Feeling adventurous? There’s a bonus challenge waiting for you:  
   - Turn the LEDs into a progress bar that fills up as the temperature rises toward a target. It’s a great way to add a little visual flair to your project! 
+  
+  ## Components we are using - to each add picture and details about it  
 
-  
-  
-  ## Components we are using   
+  1. Arduino  
+  2. BME280  
+  3. TM1638  
+  4. jumper wires - 2 types    
+  5. diode  
+  6. resistor  
+  7. Raspberry Pi   
+
+    
   ## Raspberry - Arduino relationship  
   ## Flow 1 - easy & hard with collapsible parts, hints
   ## Flow 2 - easy & hard with collapsible parts, hints 
@@ -32,13 +41,13 @@
 
 
   ## Useful utilities and commands:   
-  ```
+  ```bash
   platformio lib install "AM2302-Sensor"
   ```
-  ```
+  ```bash
   rsync -avp oweley@192.168.1.224/temperature_AM2302 --mkpath
   ```
-  ```
+  ```bash
   pio run -t upload --upload-port /dev/ttyUSB0
   ```
 
