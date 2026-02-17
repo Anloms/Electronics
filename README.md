@@ -4,6 +4,7 @@
 <br>
 
  # $\large{\textsf{\color{black}{Objective}}}$  
+ <br>
   
   We’ll get hands-on with the BME280 sensor — a cool little device that measures temperature, humidity, and air pressure
   — and the TM1638 controller,  which lets you control LEDs and a built-in display. Along the way, you’ll learn how these components
@@ -23,6 +24,8 @@
   <br>
   
   # $\large{\textsf{\color{black}{Components - list}}}$    
+
+  <br><br>
   
 |  | Component | Description | Image | Details |
 | :--: | :---: | :---: | :---: | :-----: |
@@ -35,16 +38,52 @@
 |7 | Resistor  | A component that limits the flow of electricity. It helps control things like LED brightness and protects sensitive parts from getting too much current. | <img alt="Various resistors" src="https://github.com/Anloms/Electronics/blob/main/resistors.png"/> | [Learn more about Resistors ](#Resistors) |
 |8 | Raspberry Pi   | A full mini-computer (with an operating system!) that can do everything from running code to browsing the web. In this workshop, it serves as the intermediary between the school's machine and Arduino. |<img alt="Raspberry Pi 3, model B+" src="https://github.com/Anloms/Electronics/blob/main/Pi_3.png"/>  | [Learn more about Raspberry Pi ](#Raspberry-Pi) |  
 
-# Flow part 1 easy & hard with collapsible parts, hints
+<br><br>
 
-    
-<details>
+# $\large{\textsf{\color{black}{Flow - Part 1}}}$    
 
-<summary>Hint</summary>
+<br><br>
 
-### Add a header
+### $\Large{\textbf{\color{#f48522}{1. Setting Up Your Breadboard and Arduino }}}$ 
+   Before we connect any fancy sensors, we need to give our Arduino a stable home on the breadboard and provide it with power.   
+   - Gently place your Arduino Uno board onto the breadboard so it straddles the center gap. Place it at the very top to leave plenty of room below for your circuit. The USB port should hang slightly over the edge.   
 
-</details>
+  > [!TIP]
+  > Make sure no pins are bent underneath and that the board is seated firmly but gently.   
+<br>
+
+### $\Large{\textbf{\color{#f48522}{2. Provide power to the breadboard}}}$   
+  The Arduino has pins that can provide power, but we need to connect them to the breadboard's power rails (the long rows of holes marked with red and blue lines on the side).
+  - Take a red male-to-male jumper wire. Connect one end to the 5V pin on the Arduino. Connect the other end to a hole in the red (positive) rail on your breadboard.  
+  - Take a black (or blue) male-to-male jumper wire. Connect one end to a GND (ground) pin on the Arduino. Connect the other end to a hole in the blue (negative) rail on your breadboard.  
+
+> [!NOTE]
+> Why this matters: Now, any component that needs power can draw it from these rails, keeping your circuit organized.    
+<br>
+
+### $\Large{\textbf{\color{#f48522}{3. Connecting the BME280 Sensor}}}$  
+  Now for the star of the show. We'll connect the sensor using a communication method called I2C, which only uses two wires.   
+  - Identify the Pins: Look at your BME280 sensor. You'll need to identify four pins: 
+      - VIN (or VCC),
+      - GND
+      - SCL (Serial Clock)
+      - and SDA (Serial Data)
+  - Make the Connections:  
+      - Power (VIN): Use a jumper wire to connect the VIN pin on the sensor to the red (+) power rail on your breadboard.  
+      - Ground (GND): Use a jumper wire to connect the GND pin on the sensor to the blue (-) ground rail on your breadboard.  
+      - I2C Data (SDA): Use a jumper wire to connect the SDA pin on the sensor to the A4 pin on the Arduino Uno. (On an Uno, A4 is the hardware pin for I2C data).  
+      - I2C Clock (SCL): Use a jumper wire to connect the SCL pin on the sensor to the A5 pin on the Arduino Uno. (On an Uno, A5 is the hardware pin for the I2C clock). 
+ <br>
+
+### $\Large{\textbf{\color{#f48522}{4. The Software - Reading the Sensor}}}$     
+With the hardware connected, let's program the Arduino to talk to the sensor and show us what it sees.  
+
+  Install the Required Libraries. Open the Arduino IDE on your computer. Go to Sketch > Include Library > Manage Libraries... In the Library Manager, search for "Adafruit BME280".
+  When prompted, also install any dependencies, especially "Adafruit Unified Sensor".  
+  
+> [!NOTE]
+> Why we need it: These libraries contain all the specific commands needed to communicate with the BME280, so we don't have to write them from scratch.
+
 
 
   ## Useful utilities and commands:   
