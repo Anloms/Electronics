@@ -113,7 +113,55 @@ With the hardware connected, let's program the Arduino to talk to the sensor and
   
   
 > [!NOTE]
-> Why we need it: These libraries contain all the specific commands needed to communicate with the BME280, so we don't have to write them from scratch.
+> Why we need it: These libraries contain all the specific commands needed to communicate with the BME280, so we don't have to write them from scratch.  
+
+<details><summary>Guide to writing the Software yourself</summary></details>
+<details><summary>Cheetsheet</summary>
+ 
+### $\Large{\textbf{\color{black}{4. BME280 code}}}$  
+
+```   
+#include <Wire.h>
+#include <SPI.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_BME280.h>
+
+#define BME_SCK 13
+
+Adafruit_BME280 bme; // I2C
+
+void setup()
+{
+        Serial.begin(9600);
+        Serial.println(F("BME280 test"));
+        bool status;
+        
+        status = bme.begin(0x76);
+        if (!status)
+        {
+                Serial.println("Could not find a valid BME280 sensor, check wiring!");
+        while (1);
+        }
+
+}
+
+void printValues()
+{
+        Serial.print("Temperature = ");
+        Serial.print(bme.readTemperature());
+        Serial.println(" *C");
+
+        Serial.println();
+        delay(5000);
+}
+
+void loop()
+{
+        printValues();
+}
+```   
+
+</details>
 
 
 
