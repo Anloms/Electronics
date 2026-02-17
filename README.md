@@ -1,7 +1,10 @@
 
-# Guide
+# $\Huge{\textsf{\color{black}{Guide}}}$  
 
-  ## Objective 
+<br>
+
+ # $\large{\textsf{\color{black}{Objective}}}$  
+  
   We’ll get hands-on with the BME280 sensor — a cool little device that measures temperature, humidity, and air pressure
   — and the TM1638 controller,  which lets you control LEDs and a built-in display. Along the way, you’ll learn how these components
   talk to each otherand how you can tell them exactly what to do.  
@@ -16,8 +19,10 @@
   
   Feeling adventurous? There’s a bonus challenge waiting for you:  
   - Turn the LEDs into a progress bar that fills up as the temperature rises toward a target. It’s a great way to add a little visual flair to your project! 
+
+  <br>
   
-  ## Components we are using   
+  # $\large{\textsf{\color{black}{Components - list}}}$    
   
 |  | Component | Description | Image | Details |
 | :--: | :---: | :---: | :---: | :-----: |
@@ -64,18 +69,20 @@ If result is `0` then Arduino indeed is responsive.
 
 <br>
 
-# $\LARGE{\textsf{\color{black}{Components - the closer look}}}$   
+# $\large{\textsf{\color{black}{Components - the closer look}}}$   
 
 <br><br>
-
-## $\LARGE{\textsf{\color{black}{Arduino Nano}}}$ 
+<details>
+  <summary>
+## $\large{\textsf{\color{black}{Arduino Nano}}}$ 
+    </summary>
   The Nano is small — only 45 x 18 mm — which means it fits perfectly on a breadboard right alongside your other components.
   Arduino Nano's brain is ATmega328P Processor, running at 16 MHz . It's reliable, well-supported, and perfect for learning and prototyping.
     
 <br><br><br>
 
 
-## $\LARGE{\textsf{\color{#f5750e}{Pin Breakdown}}}$   
+## $\large{\textsf{\color{#f5750e}{Pin Breakdown}}}$   
 
 <img alt="Arduino Nano Pinout" src="https://github.com/Anloms/Electronics/blob/main/Resources/Nano_pinout.png"/>
 
@@ -102,71 +109,74 @@ If result is `0` then Arduino indeed is responsive.
 
 <br>
 
-### $\LARGE{\text{\color{#326a95}{Digital I/O Pin (0-13)}}}$
-### $\large{\text{\color{#326a95}{These 14 pins are designed to handle binary signals (on or off)}}}$
+  ### $\Large{\text{\color{#326a95}{Digital I/O Pin (0-13)}}}$
+  ### $\large{\text{\color{#326a95}{These 14 pins are designed to handle binary signals (on or off)}}}$
 
 
-- ***General Purpose:***  
-  You can configure them as INPUT (to read if a button is pressed, 5V or 0V) or OUTPUT (to turn an LED on or off, or control a relay).    
-- ***PWM (~Pins 3, 5, 6, 9, 10, 11)***  
-      While standard outputs can only be fully ON (5V) or OFF (0V), these specific pins can simulate an analog output using a technique called Pulse-Width Modulation (PWM). 
-      They output a square wave that switches on and off so fast that it mimics a voltage between 0 and 5V.    
-`Example: This is used to dim LEDs or control the speed of motors.`  
-
-<br>
-
-### $\LARGE{\text{\color{#326a95}{Analog Input Pins (A0-A7)}}}$
-### $\large{\text{\color{#326a95}{These pins are designed to read varying voltages from sensors (eg. temperature sensors)}}}$
-
-
-- ***10-bit ADC:*** They use an Analog-to-Digital Converter. The "10-bit" means they map input voltages between 0 and 5V into integer values between 0 and 1023.  
-- ***A6 and A7*** Restriction: On some boards (like the Nano), A6 and A7 are strictly analog input pins. Unlike A0 through A5, they cannot be used as digital input/output pins.  
+  - ***General Purpose:***  
+    You can configure them as INPUT (to read if a button is pressed, 5V or 0V) or OUTPUT (to turn an LED on or off, or control a relay).    
+  - ***PWM (~Pins 3, 5, 6, 9, 10, 11)***  
+        While standard outputs can only be fully ON (5V) or OFF (0V), these specific pins can simulate an analog output using a technique called Pulse-Width Modulation (PWM). 
+        They output a square wave that switches on and off so fast that it mimics a voltage between 0 and 5V.    
+  `Example: This is used to dim LEDs or control the speed of motors.`  
 
 <br>
 
-### $\LARGE{\text{\color{#326a95}{Power Pins}}}$
-### $\large{\text{\color{#326a95}{These pins are used to provide power to the Arduino board itself or to power external components}}}$
+  ### $\Large{\text{\color{#326a95}{Analog Input Pins (A0-A7)}}}$
+  ### $\large{\text{\color{#326a95}{These pins are designed to read varying voltages from sensors (eg. temperature sensors)}}}$
 
-- ***VIN (7-12V):*** 
-  This is the input voltage pin. If you are using an unregulated power supply (like a battery), you connect the positive lead here. The board has a voltage regulator that converts this down to the 5V needed for operation.  
-- ***5V:*** 
-  This pin outputs a regulated 5V. It can be used to power 5V sensors. If you are powering the board via USB, this pin will output power. If you supply clean 5V directly to this pin, you can bypass the onboard regulator.   
-- ***3.3V:*** 
-  This outputs a regulated 3.3V for low-voltage components.   
-- ***GND (Ground):*** 
-  The common return path for electricity. Having multiple GND pins makes wiring easier, allowing you to keep your circuits tidy.   
+
+  - ***10-bit ADC:*** They use an Analog-to-Digital Converter. The "10-bit" means they map input voltages between 0 and 5V into integer values between 0 and 1023.  
+  - ***A6 and A7*** Restriction: On some boards (like the Nano), A6 and A7 are strictly analog input pins. Unlike A0 through A5, they cannot be used as digital input/output pins.  
 
 <br>
 
-### $\LARGE{\textsf{\color{#326a95}{Specialized Pins}}}$  
-### $\large{\textsf{\color{#326a95}{These pins handle specific functions related to the microcontroller's operation}}}$  
+  ### $\Large{\text{\color{#326a95}{Power Pins}}}$
+  ### $\large{\text{\color{#326a95}{These pins are used to provide power to the Arduino board itself or to power external components}}}$
+
+  - ***VIN (7-12V):*** 
+    This is the input voltage pin. If you are using an unregulated power supply (like a battery), you connect the positive lead here. The board has a voltage regulator that converts this down to the 5V needed for operation.  
+  - ***5V:*** 
+    This pin outputs a regulated 5V. It can be used to power 5V sensors. If you are powering the board via USB, this pin will output power. If you supply clean 5V directly to this pin, you can bypass the onboard regulator.   
+  - ***3.3V:*** 
+    This outputs a regulated 3.3V for low-voltage components.   
+  - ***GND (Ground):*** 
+    The common return path for electricity. Having multiple GND pins makes wiring easier, allowing you to keep your circuits tidy.   
+
+<br>
+
+  ### $\Large{\textsf{\color{#326a95}{Specialized Pins}}}$  
+  ### $\large{\textsf{\color{#326a95}{These pins handle specific functions related to the microcontroller's operation}}}$  
 
 
-***- RST (Reset):*** 
-  There are usually two of these. Briefly connecting this pin to GND resets the microcontroller. This restarts your sketch from the beginning. It's useful if your code gets stuck or you want to restart the program without unplugging the power.   
-***- AREF (Analog Reference):*** 
-  This pin allows you to set a custom maximum voltage for the analog inputs. By default, analogRead() assumes 5V equals a value of 1023. If you connect a voltage (e.g., 2.5V) to the AREF pin and configure the software, the ADC will use that voltage as its reference, providing higher resolution for sensors that output lower voltages.   
+  - ***RST (Reset):*** 
+    There are usually two of these. Briefly connecting this pin to GND resets the microcontroller. This restarts your sketch from the beginning. It's useful if your code gets stuck or you want to restart the   program without unplugging the power.   
+  - ***AREF (Analog Reference):*** 
+    This pin allows you to set a custom maximum voltage for the analog inputs. By default, analogRead() assumes 5V equals a value of 1023. If you connect a voltage (e.g., 2.5V) to the AREF pin and configure the software, the ADC will use that voltage as its reference, providing higher resolution for sensors that output lower voltages.   
 
  <br><br><br>   
     
-   Communication Skills:   
+  ### $\Large{\textsf{\color{black}{Communication Skills}}}$  
    - I²C — talks to sensors like your BME280 (only needs 2 wires!).   
    - SPI — faster communication for displays and modules.   
    - Serial (UART) — chats with your computer to debug or send data.   
-    
-   What Can You Build With It?   
-   - Sensors & Monitoring - Weather stations, air quality monitors, soil moisture sensors for plants.  
-   - Wearables -	Tiny enough to sew into clothing or embed in accessories.  
-   - Robotics -	Control small robots, servos, and motors.  
-   - Interactive Art	- Light displays, sound-reactive installations, touch-sensitive sculptures.  
-   - Automation - Smart home gadgets, automatic plant waterers, pet feeders.  
-   
-### Useful Links:  
-   [More about pins](https://leecuriosity.com/arduino-nano-pinout-full-guide-for-beginners/)  
-    
-  ## TM1638  
-  ## BME280  
-  ## Led Diodes  
-  ## Resistors  
-  ## Jumper Wires  
-  ## Raspberry Pi  
+
+  ### $\Large{\textsf{\color{black}{Useful links}}}$  
+  - [More about pins](https://leecuriosity.com/arduino-nano-pinout-full-guide-for-beginners/)  
+
+<br>
+</details>
+
+## $\LARGE{\textsf{\color{black}{TM1638}}}$  
+  
+## $\LARGE{\textsf{\color{black}{BME280}}}$  
+  
+## $\LARGE{\textsf{\color{black}{Breadboard}}}$  
+  
+## $\LARGE{\textsf{\color{black}{Led Diodes}}}$ 
+  
+  ## $\LARGE{\textsf{\color{black}{Resistors}}}$   
+  
+  ## $\LARGE{\textsf{\color{black}{Jumper Wires}}}$    
+  
+  ## $\LARGE{\textsf{\color{black}{Raspberry Pi}}}$  
