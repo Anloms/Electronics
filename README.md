@@ -72,10 +72,6 @@ If result is `0` then Arduino indeed is responsive.
   The Nano is small — only 45 x 18 mm — which means it fits perfectly on a breadboard right alongside your other components.
   Arduino Nano's brain is ATmega328P Processor, running at 16 MHz . It's reliable, well-supported, and perfect for learning and prototyping.
     
-  Memory Specs for Your Code:  
-  - 32 KB of flash memory to store your program (like a notebook for your instructions).  
-  - 2 KB of SRAM to hold temporary data while running (like a whiteboard for quick notes).  
-  - 1 KB of EEPROM to save data even when power is off (like a tiny sticky note that survives a power outage)    
 <br><br><br>
 
 
@@ -83,9 +79,30 @@ If result is `0` then Arduino indeed is responsive.
 
 <img alt="Arduino Nano Pinout" src="https://github.com/Anloms/Electronics/blob/main/Resources/Nano_pinout.png"/>
 
-<br><br>
+<br>
 
-### $\LARGE{\text{\color{#326a95}{Digital I/O Pin}}}$
+| left side |  |  | right side |  |  |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| Physical Pin | General Purpose pin |  Notes | Physical Pin | General Purpose pin | Notes |
+| 1 | D13 | Digital I/O, Built-in LED | 30 | D12 | Digital I/O, SPI (MISO) |
+| 2 | 3V3 |  Power Output | 29 | D11 | Digital I/O, PWM, SPI (MOSI) |
+| 3 | AREF | Analog Reference | 28 | D10 | Digital I/O, PWM, SPI (SS) |
+| 4 | A0/D14 | Analog Input or Digital I/O | 27 | D9 | Digital I/O, PWM |
+| 5 | A1/D15 | Analog Input or Digital I/O | 26 | D8 | 	Digital I/O |
+| 6 | A2/D16 | Analog Input or Digital I/O | 25 | D7 | Digital I/O |
+| 7 | A3/D17 | Analog Input or Digital I/O | 24 | D6 | Digital I/O, PWM |
+| 8 | A4/D18 | Analog Input or Digital I/O, I2C (SDA) | 23 | D5 | Digital I/O, PWM |
+| 9 | A5/D19 | Analog Input or Digital I/O, I2C (SCL) | 22 | D4 | Digital I/O |
+| 10 | A6/D20 | Analog Input or Digital I/O | 21 | D3 | Digital I/O, PWM |
+| 11 | A7/D21 | Analog Input or Digital I/O | 20 | D2 | Digital I/O |
+| 12 | +5V | Power Output/Input | 19 | GND | Power Ground |
+| 13 | RST | Reset | 18 | RST | Reset |
+| 14 | GND | Power Ground | 17 | D0 / TX | Digital I/O, Serial Transmit |
+| 15 | VIN | Power Input | 16 | D0 / RX | Digital I/O, Serial Receive |
+
+<br>
+
+### $\LARGE{\text{\color{#326a95}{Digital I/O Pin (0-13)}}}$
 ### $\large{\text{\color{#326a95}{These 14 pins are designed to handle binary signals (on or off)}}}$
 
 
