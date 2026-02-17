@@ -115,8 +115,17 @@ With the hardware connected, let's program the Arduino to talk to the sensor and
 > [!NOTE]
 > Why we need it: These libraries contain all the specific commands needed to communicate with the BME280, so we don't have to write them from scratch.  
 
-<details><summary>Guide to writing the Software yourself</summary></details>
-<details><summary>Cheetsheet</summary>
+
+
+
+<details><summary> 
+ 
+ ## $\Large{\textbf{\color{red}{Guide to writing the software yourself}}}$
+ </summary></details>
+<details><summary> 
+ 
+ ## $\Large{\textbf{\color{blue}{Just copy the code}}}$
+</summary>
  
 ### $\Large{\textbf{\color{black}{4. BME280 code}}}$  
 
@@ -162,6 +171,7 @@ void loop()
 ```   
 
 </details>
+
 
 
 
