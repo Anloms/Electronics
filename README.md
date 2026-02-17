@@ -73,10 +73,12 @@ If result is `0` then Arduino indeed is responsive.
 
 <br><br>
 <details>
-  <summary>
-## $\large{\textsf{\color{black}{Arduino Nano}}}$ 
-    </summary>
-  The Nano is small — only 45 x 18 mm — which means it fits perfectly on a breadboard right alongside your other components.
+  <summary>$\LARGE{\textsf{\color{black}{Arduino Nano}}}$</summary>
+ <br><br>
+ 
+ ## $\Large{\textsf{\color{black}{Arduino Nano}}}$  
+ 
+  Arduino Nano is small — only 45 x 18 mm — which means it fits perfectly on a breadboard right alongside your other components.
   Arduino Nano's brain is ATmega328P Processor, running at 16 MHz . It's reliable, well-supported, and perfect for learning and prototyping.
     
 <br><br><br>
@@ -166,17 +168,45 @@ If result is `0` then Arduino indeed is responsive.
 
 <br>
 </details>
+<details>
+ <summary>$\LARGE{\textsf{\color{black}{TM1638}}}$</summary> <br><br>
+ 
+ ## $\Large{\textsf{\color{black}{TM1638}}}$
+ 
+</details>
+</details>
+<details>
+ <summary>$\LARGE{\textsf{\color{black}{BME280}}}$</summary><br><br>
 
-## $\LARGE{\textsf{\color{black}{TM1638}}}$  
-  
-## $\LARGE{\textsf{\color{black}{BME280}}}$  
-  
-## $\LARGE{\textsf{\color{black}{Breadboard}}}$  
-  
-## $\LARGE{\textsf{\color{black}{Led Diodes}}}$ 
-  
-  ## $\LARGE{\textsf{\color{black}{Resistors}}}$   
-  
-  ## $\LARGE{\textsf{\color{black}{Jumper Wires}}}$    
-  
-  ## $\LARGE{\textsf{\color{black}{Raspberry Pi}}}$  
+ ## $\Large{\textsf{\color{black}{BME280}}}$
+</details>
+</details>
+<details>
+ <summary>$\LARGE{\textsf{\color{black}{Breadboard}}}$</summary><br><br>
+
+ ## $\Large{\textsf{\color{black}{Breadboard}}}$
+</details>
+</details>
+<details>
+ <summary>$\LARGE{\textsf{\color{black}{Led Diodes}}}$</summary><br><br>
+ 
+ ## $\Large{\textsf{\color{black}{Led Diodes}}}$
+</details>
+</details>
+<details>
+ <summary>$\LARGE{\textsf{\color{black}{Resistors}}}$</summary><br><br>
+ 
+ ## $\Large{\textsf{\color{black}{Resistors}}}$
+</details>
+</details>
+<details>
+ <summary>$\LARGE{\textsf{\color{black}{Jumper Wires}}}$</summary><br><br>
+
+ ## $\Large{\textsf{\color{black}{Jumper Wires}}}$
+</details>
+</details>
+<details>
+ <summary>$\LARGE{\textsf{\color{black}{Raspberry Pi}}}$</summary><br><br>
+
+ ## $\Large{\textsf{\color{black}{Raspberry Pi}}}$
+</details>
