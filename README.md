@@ -308,37 +308,37 @@ If result is `0` then Arduino indeed is responsive.
  ## $\Large{\textsf{\color{black}{TM1638}}}$
  
 </details>
-</details>
+
 <details>
  <summary>$\LARGE{\textsf{\color{black}{BME280}}}$</summary><br><br>
 
  ## $\Large{\textsf{\color{black}{BME280}}}$
 </details>
-</details>
+
 <details>
  <summary>$\LARGE{\textsf{\color{black}{Breadboard}}}$</summary><br><br>
 
  ## $\Large{\textsf{\color{black}{Breadboard}}}$
 </details>
-</details>
+
 <details>
  <summary>$\LARGE{\textsf{\color{black}{Led Diodes}}}$</summary><br><br>
  
  ## $\Large{\textsf{\color{black}{Led Diodes}}}$
 </details>
-</details>
+
 <details>
  <summary>$\LARGE{\textsf{\color{black}{Resistors}}}$</summary><br><br>
  
  ## $\Large{\textsf{\color{black}{Resistors}}}$
 </details>
-</details>
+
 <details>
  <summary>$\LARGE{\textsf{\color{black}{Jumper Wires}}}$</summary><br><br>
 
  ## $\Large{\textsf{\color{black}{Jumper Wires}}}
 </details>
-</details>
+
 <details>
  <summary># $\LARGE{\textsf{\color{black}{Raspberry Pi}}}$</summary><br><br>
 
