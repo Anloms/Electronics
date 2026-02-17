@@ -45,12 +45,12 @@
 |  | Component | Description | Image | Details |
 | :--: | :---: | :---: | :---: | :-----: |
 |1 | Arduino | A small, programmable computer (a microcontroller) that reads data from sensors, controls lights and displays, and runs your code. Think of it as the brain of your project. | <img alt="Arduino Nano" src="https://github.com/Anloms/Electronics/blob/main/Arduino_nano.png"/> | [Learn more about Arduino Nano ](#arduino-nano) |
-|2 | BME280 | A handy sensor module that measures temperature, humidity, and barometric pressure. It’s like a mini weather station on a chip! | <img alt="BME280 temperature, humidity and air pressure sensor" src="https://github.com/Anloms/Electronics/blob/main/BME280_2.png"/> | [Learn more about BME280 ](#BME280) |
-|3 | TM1638  | A controller board with 8 LEDs, 8 buttons, and an 8-digit display. It lets you show numbers and control lights, making your project more interactive and visual. | <img alt="TM1638 Control Module" src="https://github.com/Anloms/Electronics/blob/main/TM1638.png"/> | [Learn more about TM1638 ](#TM1638) 
-|4 | Jumper Wires - Type A | Usually male-to-male wires used to connect components directly to the Arduino’s pins or a breadboard. Think of them as little bridges for electricity and signals. |<img alt="Various male-to-male, close-to-breadboard Jumper Wires" src="https://github.com/Anloms/Electronics/blob/main/jumper_wires_A.png"/>  | [Learn more about Jumper Wires ](#Jumper-Wires) |
+|2 | BME280 | A handy sensor module that measures temperature, humidity, and barometric pressure. It’s like a mini weather station on a chip! | <img alt="BME280 temperature, humidity and air pressure sensor" src="https://github.com/Anloms/Electronics/blob/main/BME280_2.png"/> | [Learn more about BME280 ](#bme280) |
+|3 | TM1638  | A controller board with 8 LEDs, 8 buttons, and an 8-digit display. It lets you show numbers and control lights, making your project more interactive and visual. | <img alt="TM1638 Control Module" src="https://github.com/Anloms/Electronics/blob/main/TM1638.png"/> | [Learn more about TM1638 ](#tm1638) 
+|4 | Jumper Wires - Type A | Usually male-to-male wires used to connect components directly to the Arduino’s pins or a breadboard. Think of them as little bridges for electricity and signals. |<img alt="Various male-to-male, close-to-breadboard Jumper Wires" src="https://github.com/Anloms/Electronics/blob/main/jumper_wires_A.png"/>  | [Learn more about Jumper Wires ](#jumper) |
 |5 | Jumper Wires - Type B | Often female-to-female or male-to-male wires, great for connecting sensors and modules (like the BME280) to the Arduino without soldering. | <img alt="Various male-to-male Jumper Wires" src="https://github.com/Anloms/Electronics/blob/main/Jumper_wires_B.png"/>   | [Learn more about Jumper Wires ](#jumper) |
-|6 |  Led Diode  | 		A Light Emitting Diode — a tiny light that lights up when electricity flows through it. It's energy-efficient, colourful, and perfect for visual feedback in your circuits.|<img alt="Various Led Diodes" src="https://github.com/Anloms/Electronics/blob/main/led_diode.png"/>  | [Learn more about Led Diodes ](#Led-Diodes) |
-|7 | Resistor  | A component that limits the flow of electricity. It helps control things like LED brightness and protects sensitive parts from getting too much current. | <img alt="Various resistors" src="https://github.com/Anloms/Electronics/blob/main/resistors.png"/> | [Learn more about Resistors ](#Resistors) |
+|6 |  Led Diode  | 		A Light Emitting Diode — a tiny light that lights up when electricity flows through it. It's energy-efficient, colourful, and perfect for visual feedback in your circuits.|<img alt="Various Led Diodes" src="https://github.com/Anloms/Electronics/blob/main/led_diode.png"/>  | [Learn more about Led Diodes ](#led-diodes) |
+|7 | Resistor  | A component that limits the flow of electricity. It helps control things like LED brightness and protects sensitive parts from getting too much current. | <img alt="Various resistors" src="https://github.com/Anloms/Electronics/blob/main/resistors.png"/> | [Learn more about Resistors ](#resistors) |
 |8 | Raspberry Pi   | A full mini-computer (with an operating system!) that can do everything from running code to browsing the web. In this workshop, it serves as the intermediary between the school's machine and Arduino. |<img alt="Raspberry Pi 3, model B+" src="https://github.com/Anloms/Electronics/blob/main/Pi_3.png"/>  | [Learn more about Raspberry Pi ](#raspberry-pi) |  
 
 <br><br>
@@ -207,7 +207,7 @@ If result is `0` then Arduino indeed is responsive.
 
 <br><br>
 <details>
-  <summary>$\LARGE{\textsf{\color{black}{Arduino Nano}}}$</summary>
+  <summary id="arduino-nano">$\LARGE{\textsf{\color{black}{Arduino Nano}}}$</summary>
  <br><br>
  
  ## $\Large{\textsf{\color{black}{##Arduino Nano}}}$ {: #arduino-nano}
@@ -303,38 +303,38 @@ If result is `0` then Arduino indeed is responsive.
 <br>
 </details>
 <details>
- <summary>$\LARGE{\textsf{\color{black}{TM1638}}}$</summary> <br><br>
+ <summary id="tm1638">$\LARGE{\textsf{\color{black}{TM1638}}}$</summary> <br><br>
  
  ## $\Large{\textsf{\color{black}{TM1638}}}$
  
 </details>
 
 <details>
- <summary>$\LARGE{\textsf{\color{black}{BME280}}}$</summary><br><br>
+ <summary id="bme280">$\LARGE{\textsf{\color{black}{BME280}}}$</summary><br><br>
 
  ## $\Large{\textsf{\color{black}{BME280}}}$
 </details>
 
 <details>
- <summary>$\LARGE{\textsf{\color{black}{Breadboard}}}$</summary><br><br>
+ <summary id="breadboard">$\LARGE{\textsf{\color{black}{Breadboard}}}$</summary><br><br>
 
  ## $\Large{\textsf{\color{black}{Breadboard}}}$
 </details>
 
 <details>
- <summary>$\LARGE{\textsf{\color{black}{Led Diodes}}}$</summary><br><br>
+ <summary  id="led-diodes">$\LARGE{\textsf{\color{black}{Led Diodes}}}$</summary><br><br>
  
  ## $\Large{\textsf{\color{black}{Led Diodes}}}$
 </details>
 
 <details>
- <summary>$\LARGE{\textsf{\color{black}{Resistors}}}$</summary><br><br>
+ <summary id="resistors">$\LARGE{\textsf{\color{black}{Resistors}}}$</summary><br><br>
  
  ## $\Large{\textsf{\color{black}{Resistors}}}$
 </details>
 
 <details>
- <summary>$\LARGE{\textsf{\color{black}{Jumper Wires}}}$</summary><br><br>
+ <summary id="jumper">$\LARGE{\textsf{\color{black}{Jumper Wires}}}$</summary><br><br>
 
  ## $\Large{\textsf{\color{black}{Jumper Wires}}}
 </details>
