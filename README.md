@@ -79,7 +79,9 @@ If result is `0` then Arduino indeed is responsive.
 <br><br><br>
 
 
-## $\LARGE{\textsf{\color{#f5750e}{Pin Breakdown}}}$ 
+## $\LARGE{\textsf{\color{#f5750e}{Pin Breakdown}}}$   
+
+<img alt="Arduino Nano Pinout" src=""/>
 
 <br><br>
 
@@ -141,6 +143,9 @@ If result is `0` then Arduino indeed is responsive.
    - Robotics -	Control small robots, servos, and motors.  
    - Interactive Art	- Light displays, sound-reactive installations, touch-sensitive sculptures.  
    - Automation - Smart home gadgets, automatic plant waterers, pet feeders.  
+   
+### Useful Links:  
+   [More about pins](https://leecuriosity.com/arduino-nano-pinout-full-guide-for-beginners/)  
     
   ## TM1638  
   ## BME280  
