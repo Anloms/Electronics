@@ -21,14 +21,14 @@
   
   |  | Component | Description | Image | Detail |
   | :--: | :---: | :---: | :---: | :---: |
-  |1 | Arduino |  |  |  |
-  |2 | BME280 |  |  |  |
-  |3 | TM1638  |  |  |  |
-  |4 | jumper wires - type A |  |  |  |  
-  |5 | jumper wires - type B |  |  |  |
-  |6 |  diode  |  |  |  |
-  |7 | resistor  |  |  |  |
-  |8 | Raspberry Pi   |  |  |  |  
+  |1 | Arduino | A small, programmable computer (a microcontroller) that reads data from sensors, controls lights and displays, and runs your code. Think of it as the brain of your project. |  |  |
+  |2 | BME280 | A handy sensor module that measures temperature, humidity, and barometric pressure. It’s like a mini weather station on a chip! |  |  |
+  |3 | TM1638  | A controller board with 8 LEDs, 8 buttons, and an 8-digit display. It lets you show numbers and control lights, making your project more interactive and visual. |  |  |
+  |4 | jumper wires - type A | Usually male-to-male wires used to connect components directly to the Arduino’s pins or a breadboard. Think of them as little bridges for electricity and signals. |  |  |  
+  |5 | jumper wires - type B | Often female-to-female or male-to-male wires, great for connecting sensors and modules (like the BME280) to the Arduino without soldering. |  |  |
+  |6 |  diode  | 	A small electronic component that lets electricity flow in only one direction. It’s like a one-way valve for current — useful for protecting parts of your circuit. |  |  |
+  |7 | resistor  | A component that limits the flow of electricity. It helps control things like LED brightness and protects sensitive parts from getting too much current. |  |  |
+  |8 | Raspberry Pi   | A full mini-computer (with an operating system!) that can do everything from running code to browsing the web. In this workshop, it serves as the intermediary between the school's machine and Arduino. |  |  |  
 
   
   ## Raspberry - Arduino relationship  
