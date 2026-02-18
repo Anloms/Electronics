@@ -23,7 +23,7 @@
 
   <br>
   
-  # $\large{\textsf{\color{black}{Components - list}}}$    
+  # $\large{\textsf{\color{black}{Components list}}}$    
 
   <br><br>
   
@@ -109,15 +109,7 @@ With the hardware connected, let's program the Arduino to talk to the sensor and
 <details><summary> 
  
 ## $\large{\textsf{\color{#D1242F}{    Guide to writing the software yourself}}}$ 
-</summary>
-
-Before we write a single line of code, let's understand what's happening behind the scenes when we want to read from the BME280 sensor.  
-
-How do we communicate?   
-The BME280 communicates using I2C (Inter-Integrated Circuit). Think of I2C like a telephone party line:   
-- SDA (Serial Data Line) is the conversation itself    
-- SCL (Serial Clock) keeps everyone talking in rhythm   
-Each device has a unique address so the Arduino knows who it's talking to.   
+</summary>   
 
 <br>
 
@@ -451,10 +443,10 @@ void loop()
 
 <br><br>
 <details>
-  <summary id="arduino-nano">$\LARGE{\textsf{\color{black}{Arduino Nano}}}$</summary>
+  <summary id="arduino-nano">$\LARGE{\textsf{\color{black}{  Arduino Nano}}}$</summary>
  <br><br>
  
- # $\Large{\textbf{\color{#f48522}{  Arduino Nano}}}$
+ # $\Large{\textbf{\color{#f48522}{Arduino Nano}}}$
  
   Arduino Nano is small — only 45 x 18 mm — which means it fits perfectly on a breadboard right alongside your other components.
   Arduino Nano's brain is ATmega328P Processor, running at 16 MHz . It's reliable, well-supported, and perfect for learning and prototyping.
@@ -489,6 +481,7 @@ void loop()
 <br>
 
   ### $\Large{\textsf{\color{#326a95}{Dital I/O Pin (0-13)}}}$
+  
   ### $\large{\textsf{\color{#326a95}{These 14 pins are designed to handle binary signals (on or off)}}}$
 
 
@@ -502,6 +495,7 @@ void loop()
 <br>
 
   ### $\Large{\textsf{\color{#326a95}{Analog Input Pins (A0-A7)}}}$ 
+  
   ### $\large{\text{\color{#326a95}{These pins are designed to read varying voltages from sensors (eg. temperature sensors)}}}$
 
 
@@ -511,6 +505,7 @@ void loop()
 <br>
  
   ### $\Large{\textsf{\color{#326a95}{Power Pins}}}$ 
+  
   ### $\large{\text{\color{#326a95}{These pins are used to provide power to the Arduino board itself or to power external components}}}$
 
   - ***VIN (7-12V):*** 
@@ -525,6 +520,7 @@ void loop()
 <br>
 
   ### $\Large{\textsf{\color{#326a95}{Specialized Pins}}}$  
+  
   ### $\large{\textsf{\color{#326a95}{These pins handle specific functions related to the microcontroller's operation}}}$  
 
 
