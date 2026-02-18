@@ -128,7 +128,7 @@ With the hardware connected, let's program the Arduino to talk to the sensor and
 
 Before we write a single line of code, let's understand what's happening behind the scenes when we want to read from the BME280 sensor.  
 
-What Do We Need to Communicate?   
+:bulb:What Do We Need to Communicate?   
 The BME280 communicates using I2C (Inter-Integrated Circuit). Think of I2C like a telephone party line:   
 - SDA (Serial Data Line) is the conversation itself    
 - SCL (Serial Clock) keeps everyone talking in rhythm   
@@ -140,23 +140,23 @@ Step 1: Including Libraries
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
 ```   
-Why <Wire.h>?   
+:bulb:Why <Wire.h>?   
  This is Arduino's built-in I2C library. It's like learning the alphabet before writing a letter. Without Wire.h, your Arduino wouldn't know how to:
  - Start and stop communication on the I2C bus
  - Send bytes of data
  - Request data from sensors
  - Handle the timing of the clock signal  
 
-What happens inside?  
+:bulb:What happens inside?  
    Wire.h translates your commands into electrical signals on the SDA and SCL pins.    
 
-Why <Adafruit_Sensor.h>?   
+:bulb:Why <Adafruit_Sensor.h>?   
   This is an interface library. Think of it as a universal translator. It ensures that all sensors (BME280, humidity sensors, motion sensors, etc.) speak a similar language. It provides:  
   - Standardized ways to get sensor data   
   - Consistent data structures (like sensor_t for sensor info)   
   - Common methods like getEvent() across different sensors   
      
-Why <Adafruit_BME280.h>?   
+:bulb:Why <Adafruit_BME280.h>?   
   This is the BME280's personal interpreter. It knows:  
   - The exact I2C commands the BME280 understands   
   - How to request temperature vs. humidity vs. pressure   
@@ -179,11 +179,10 @@ Step 3: Macros - Why Use #define?
 ```
 #define SEALEVELPRESSURE_HPA (1013.25)
 ```
-
-What is a Macro?      
+:bulb:What is a Macro?      
   A macro is a find-and-replace that happens before your code compiles. Everywhere you write SEALEVELPRESSURE_HPA, the compiler replaces it with 1013.25.  
 
-Why Use Macros Instead of Variables?   
+:bulb:Why Use Macros Instead of Variables?   
 ```
 // Using a variable:
 float seaLevelPressure = 1013.25;  // Takes up memory
@@ -208,7 +207,7 @@ void setup() {
   }
 }
 ```  
-Why Serial.begin(9600)?  
+:bulb:Why Serial.begin(9600)?  
   This opens a communication channel between your Arduino and computer. Think of it as opening a walkie-talkie channel:  
   - Serial - The walkie-talkie itself   
   - begin(9600) - Tuning to channel "9600" (baud rate)  
@@ -216,7 +215,7 @@ Why Serial.begin(9600)?
 
 Without this line, Serial.println() would have nowhere to send the data.
 
-The Magic of bme.begin(0x76)   
+The Magic of `bme.begin(0x76)`   
 This is where the actual conversation with the sensor begins:   
 ```
 if (!bme.begin(0x76)) {
@@ -228,7 +227,7 @@ This line does so much behind the scenes:
 - Reads calibration data from the sensor's memory   
 - Configures the sensor's default settings (sampling rates, filter, etc.)   
 
-Why 0x76?
+:bulb:Why 0x76?
 Most BME280 boards use address 0x76.  
 
 The ! means "if NOT successful". If the sensor doesn't respond, we print an error and stop with while(1) (infinite loop).
@@ -258,16 +257,17 @@ void loop() {
   delay(1000);  // Wait 1 second
 }
 ```   
-Why Store in a Variable?  
+:bulb:Why Store in a Variable?  
 ```
 float temperature = bme.readTemperature();
 ```  
 This stores the reading so you can use it multiple times without re-requesting it from the sensor. If you called bme.readTemperature() three times, you'd get three slightly different readings!
 <br>
 
-> [!IMPORTANT]  
-> The delay() is Crucial  
-> Without delay(1000), the Arduino would read the sensor millions of times per second, flooding the I2C bus and filling your serial monitor instantly.  
+ > [!IMPORTANT]  
+ > The delay() is Crucial  
+
+Without delay(1000), the Arduino would read the sensor millions of times per second, flooding the I2C bus and filling your serial monitor instantly.  
 
 <br>
 
