@@ -103,7 +103,7 @@ With the hardware connected, let's program the Arduino to talk to the sensor and
 
 <br>
 
-# $\large{\textbf{\color{black}{Software - part 1. Choose the difficulty level:}}}$   
+# $\large{\textbf{\color{black}{Choose the difficulty level:}}}$   
 <br>
 <br>
 <details><summary> 
@@ -631,7 +631,37 @@ This makes it ideal for battery-powered projects.
 <details>
  <summary id="breadboard">$\LARGE{\textsf{\color{black}{Breadboard}}}$</summary><br><br>
 
- # Breadboard
+# $\Large{\textbf{\color{#f48522}{Breadboard}}}$  
+
+<br>
+
+A breadboard is a reusable prototyping tool that lets you build electronic circuits without soldering. Think of it as a construction site for circuits — you can plug components in, move them around, and reuse everything when you're done.
+
+<br>
+
+## $\Large{\textsf{\color{#326a95}{The Anatomy of a Breadboard}}}$
+
+1. Holes (Tie Points)  
+Those hundreds of tiny holes are where you insert component legs and jumper wires. Each hole is connected to others underneath in a specific pattern.
+
+2. The Hidden Metal Strips
+Beneath the plastic, there are metal clips connecting rows of holes. This is the most important thing to understand—the holes aren't all connected randomly!
+
+3. The Center Gap
+That groove running down the middle separates the two sides. Chips (like Arduino chips or sensors) straddle this gap so each pin connects to a different row.
+
+4. Power Rails
+The long columns marked with red (+) and blue (-) lines run the entire length of the breadboard. These are for power distribution—one connects to 5V, the other to ground.
+
+<br>
+
+## $\Large{\textsf{\color{#326a95}{What is the origin of the name?}}}$  
+
+<br>
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/HrG98HJ3Z6w/0.jpg)](https://www.youtube.com/watch?v=HrG98HJ3Z6w)
+
+<br>
 
  ***
  
