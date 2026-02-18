@@ -37,6 +37,7 @@
 |6 |  Led Diode  | 		A Light Emitting Diode — a tiny light that lights up when electricity flows through it. It's energy-efficient, colourful, and perfect for visual feedback in your circuits.|<img alt="Various Led Diodes" src="https://github.com/Anloms/Electronics/blob/main/led_diode.png"/>  | [Learn more about Led Diodes ](#led-diodes) |
 |7 | Resistor  | A component that limits the flow of electricity. It helps control things like LED brightness and protects sensitive parts from getting too much current. | <img alt="Various resistors" src="https://github.com/Anloms/Electronics/blob/main/resistors.png"/> | [Learn more about Resistors ](#resistors) |
 |8 | Raspberry Pi   | A full mini-computer (with an operating system!) that can do everything from running code to browsing the web. In this workshop, it serves as the intermediary between the school's machine and Arduino. |<img alt="Raspberry Pi 3, model B+" src="https://github.com/Anloms/Electronics/blob/main/Pi_3.png"/>  | [Learn more about Raspberry Pi ](#raspberry-pi) |  
+|9 | Breadboard | A breadboard is a reusable platform for building and testing electronic circuits without soldering. Think of it as a prototyping playground where components can be easily plugged in, moved around, and reused. | <img alt="Breadboard" src="https://github.com/Anloms/Electronics/blob/main/Resources/breadboard_2.png"/> | [Learn more about Breadboards](#breadboard) |
 
 <br><br>
 
