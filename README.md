@@ -558,7 +558,8 @@ void loop()
 <details>
  <summary id="bme280">$\LARGE{\textsf{\color{black}{BME280}}}$</summary><br><br>
 
- ## $\Large{\textsf{\color{black}{BME280}}}$
+ # BME280
+ 
 
 <img alt="BME280 pinout" src="https://github.com/Anloms/Electronics/blob/main/Resources/BME280_pinout.png">
 
@@ -576,8 +577,55 @@ It's manufactured by Bosch Sensortec and is widely used in weather stations, ind
 
 <br>
 
+## Pinout Description
+<br>
+
+| Pin | Name | Function |
+| :---: | :---: | :---: |
+| VCC | Power | Connect to 3.3V or 5V |
+| GND | Ground | Connect to common ground |
+| SCL | Serial Clock | I²C clock line - Carries the data back & forth |
+| SDA | Serial Data | I²C data line - Keeps everyone in sync |
+
+<br>
+
+> [!NOTE] I2C Communication Protocol  
+>
+> I2C (Inter-Integrated Circuit) is a serial communication protocol that allows multiple devices to talk to each other using just two wires.
+> It's the standard way to connect sensors, displays, and memory chips to microcontrollers like Arduino.
+>
+>
+> How It Works:  
+> Every device on an I2C bus has a unique address (like 0x76 for the BME280). The Arduino (called the controller) initiates all communication:
+> - Start: Arduino pulls SDA low while SCL is high → "Everyone listen up!"
+> - Address: Arduino sends the address of the device it wants to talk to
+> - Acknowledge: The matching device responds → "I'm here!"
+> - Data: Information is exchanged in 8-bit chunks
+> - Stop: Arduino releases the bus → "Conversation over"
+>
+
+<br>
+
+## Why is it popular?
+<br>
+One of the BME280's strengths is its low power consumption:
+    - 3.6 μA at 1Hz sampling rate (humidity, pressure, temperature).  
+    - 0.1 μA in sleep mode.   
+
+This makes it ideal for battery-powered projects.
+
+## Applications  
+- Weather stations: Monitor environmental conditions  
+- Altitude tracking: Pressure changes with elevation   
+- Indoor navigation: Detect floor changes in buildings  
+- GPS enhancement: Improve positioning accuracy  
+- Home automation: HVAC control  
+
+<br>
+
 ******************
 
+<br>
 </details>
 
 <details>
