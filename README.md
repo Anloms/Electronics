@@ -3,21 +3,6 @@
 
 <br>
 
-> [!NOTE]
-> Highlights information that users should take into account, even when skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]
-> Crucial information necessary for users to succeed.
-
-> [!WARNING]
-> Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
-
  # $\large{\textsf{\color{black}{Objective}}}$  
  <br>
   
@@ -115,15 +100,14 @@ With the hardware connected, let's program the Arduino to talk to the sensor and
 > [!NOTE]
 > Why we need it: These libraries contain all the specific commands needed to communicate with the BME280, so we don't have to write them from scratch.  
 
-
-## $\Large{\textbf{\color{black}{Choose the level of difficulty:}}}$   
-<br>
-<img alt="choose wisely" src="https://github.com/Anloms/Electronics/blob/main/Resources/choose_wisely.png"/>  
 <br>
 
+# $\large{\textbf{\color{black}{Software - part 1. Choose the difficulty level:}}}$   
+<br>
+<br>
 <details><summary> 
  
-## $\Large{\textbf{\color{red}{Guide to writing the software yourself}}}$ 
+## $\large{\textsf{\color{#D1242F}{    Guide to writing the software yourself}}}$ 
 </summary>
 
 Before we write a single line of code, let's understand what's happening behind the scenes when we want to read from the BME280 sensor.  
@@ -368,19 +352,20 @@ void loop() {
 
 </details>
 </details>
-
- 
-
 <br>
 
+****************************************************************
+****************************************************************
 </details>
+<br>
+
 
 <details><summary> 
  
-## $\Large{\textbf{\color{blue}{Just copy the code}}}$
+## $\large{\textsf{\color{#54aeff}{    Just copy the code}}}$
 </summary>
  
-### $\Large{\textbf{\color{black}{4. BME280 code}}}$  
+### $\large{\textsf{\color{black}{BME280 code}}}$  
 
 ```   
 #include <Wire.h>
@@ -423,15 +408,16 @@ void loop()
 }
 ```   
 
+****************************************************************
+****************************************************************
 </details>
-
-
-
-
-
+<br>
+<img alt="choose wisely" src="https://github.com/Anloms/Electronics/blob/main/Resources/choose_wisely.png"/>  
+<br>
 <br>
 
-  ## Useful utilities and commands:   
+## Useful utilities and commands:   
+
   ```bash
   platformio lib install "AM2302-Sensor"
   ```
@@ -550,11 +536,16 @@ If result is `0` then Arduino indeed is responsive.
   - [More about pins](https://leecuriosity.com/arduino-nano-pinout-full-guide-for-beginners/)  
 
 <br>
+
+****************
+
 </details>
 <details>
  <summary id="tm1638">$\LARGE{\textsf{\color{black}{TM1638}}}$</summary> <br><br>
  
  ## $\Large{\textsf{\color{black}{TM1638}}}$
+
+ *************
  
 </details>
 
@@ -562,34 +553,53 @@ If result is `0` then Arduino indeed is responsive.
  <summary id="bme280">$\LARGE{\textsf{\color{black}{BME280}}}$</summary><br><br>
 
  ## $\Large{\textsf{\color{black}{BME280}}}$
+
+******************
+
 </details>
 
 <details>
  <summary id="breadboard">$\LARGE{\textsf{\color{black}{Breadboard}}}$</summary><br><br>
 
  ## $\Large{\textsf{\color{black}{Breadboard}}}$
+
+ ***
+ 
 </details>
 
 <details>
  <summary  id="led-diodes">$\LARGE{\textsf{\color{black}{Led Diodes}}}$</summary><br><br>
  
  ## $\Large{\textsf{\color{black}{Led Diodes}}}$
+
+ ***
+ 
 </details>
 
 <details>
  <summary id="resistors">$\LARGE{\textsf{\color{black}{Resistors}}}$</summary><br><br>
  
  ## $\Large{\textsf{\color{black}{Resistors}}}$
+
+ ***
+ 
 </details>
 
 <details>
  <summary id="jumper">$\LARGE{\textsf{\color{black}{Jumper Wires}}}$</summary><br><br>
 
- ## $\Large{\textsf{\color{black}{Jumper Wires}}}
+ ## $\Large{\textsf{\color{black}{Jumper Wires}}}$
+
+ ***
+ 
 </details>
 
 <details>
  <summary id="raspberry-pi"> $\LARGE{\textsf{\color{black}{Raspberry Pi}}}$</summary><br><br>
 
- ## $\Large{\textsf{\color{black}{Raspberry Pi}}}
+ ## $\Large{\textsf{\color{black}{Raspberry Pi}}}$
+
+ ***
+
+ 
 </details>
