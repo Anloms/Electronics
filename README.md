@@ -119,7 +119,12 @@ The BME280 communicates using I2C (Inter-Integrated Circuit). Think of I2C like 
 - SCL (Serial Clock) keeps everyone talking in rhythm   
 Each device has a unique address so the Arduino knows who it's talking to.   
 
-Step 1: Including Libraries     
+<br>
+
+### $\large{\textsf{\color{#326a95}{Step 1: Including Libraries}}}$  
+
+<br>
+
 ```
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
@@ -182,8 +187,12 @@ Step 1: Including Libraries
   </details>
 </details>
 
- 
-Step 2: Creating the Sensor Object   
+<br>
+
+### $\large{\textsf{\color{#326a95}{Step 1: Creating the Sensor Object}}}$ 
+
+<br>
+
 ```
 Adafruit_BME280 bme;
 ```
@@ -192,8 +201,13 @@ This line doesn't communicate with the sensor yet. It's like buying a phone and 
  - bme.begin() - Connect to the actual sensor  
  - bme.readTemperature() - Get temperature reading  
  - bme.readHumidity() - Get humidity reading  
-    
-Step 3: Macros - Why Use #define?   
+
+<br>
+
+### $\large{\textsf{\color{#326a95}{Step 3: Macros - Why Use define?}}}$
+
+<br>
+
 ```
 #define BME_PIN 13
 ```
@@ -237,7 +251,11 @@ Step 3: Macros - Why Use #define?
  
 </details>
 
-Step 4: The setup() Function   
+<br>
+
+### $\large{\textsf{\color{#326a95}{Step 4: The setup() Function}}}$   
+
+<br>
 
 ```
 void setup() {
@@ -303,7 +321,12 @@ void setup() {
  </details>
 </details>
 
-Step 5: Available Functions - Your Toolkit
+<br>
+
+### $\large{\textsf{\color{#326a95}{Step 5: Available Functions - Your Toolkit}}}$
+
+<br>
+
 Once bme.begin() succeeds, you have access to these main functions:
 Temperature Functions:  
 ```
@@ -316,7 +339,12 @@ What happens inside?
 - Library applies calibration formulas from the sensor  
 - Returns a nice float value in Celsius  
 
-Step 6: The loop() Function - Continuous Monitoring  
+<br>
+
+### $\large{\textsf{\color{#326a95}{Step 6: The loop() Function - Continuous Monitoring}}}$  
+
+<br>
+
 ```
 void loop() {
   float temperature = bme.readTemperature();
@@ -417,31 +445,6 @@ void loop()
 <br>
 <br>
 
-# $\large{\textsf{\color{black}{CLI commands}}}$  
-
-<br>
-
-- Push the code located on the local machine to Raspberry Pi:  
-```
-  rsync -avp oweley@192.168.1.224/temperature --mkpath
-```   
-- Search for available Arduino libraries:  
-```
-  platformio lib search "keyword"
-```   
-- Install the lib of your choice:  
-```
-  platformio lib install "Adafruit BME280 Sensor"
-```   
-- Upload the code from Raspberry Pi to Arduino:  
-```
-  pio run -t upload --upload-port /dev/ttyUSB0
-```  
-
-***
-
-<br>
-
  
 
 # $\large{\textsf{\color{black}{Components - the closer look}}}$   
@@ -451,7 +454,7 @@ void loop()
   <summary id="arduino-nano">$\LARGE{\textsf{\color{black}{Arduino Nano}}}$</summary>
  <br><br>
  
- # $\Large{\textbf{\color{#f48522}{Arduino Nano}}}$
+ # $\Large{\textbf{\color{#f48522}{  Arduino Nano}}}$
  
   Arduino Nano is small — only 45 x 18 mm — which means it fits perfectly on a breadboard right alongside your other components.
   Arduino Nano's brain is ATmega328P Processor, running at 16 MHz . It's reliable, well-supported, and perfect for learning and prototyping.
@@ -546,7 +549,7 @@ void loop()
 
 </details>
 <details>
- <summary id="tm1638">$\LARGE{\textsf{\color{black}{TM1638}}}$</summary> <br><br>
+ <summary id="tm1638">$\LARGE{\textsf{\color{black}{  TM1638}}}$</summary> <br><br>
  
  ## $\Large{\textsf{\color{black}{TM1638}}}$
 
@@ -555,7 +558,7 @@ void loop()
 </details>
 
 <details>
- <summary id="bme280">$\LARGE{\textsf{\color{black}{BME280}}}$</summary><br><br>
+ <summary id="bme280">$\LARGE{\textsf{\color{black}{  BME280}}}$</summary><br><br>
 
  # $\Large{\textbf{\color{#f48522}{BME280}}}$
 
@@ -629,7 +632,7 @@ This makes it ideal for battery-powered projects.
 </details>
 
 <details>
- <summary id="breadboard">$\LARGE{\textsf{\color{black}{Breadboard}}}$</summary><br><br>
+ <summary id="breadboard">$\LARGE{\textsf{\color{black}{  Breadboard}}}$</summary><br><br>
 
 # $\Large{\textbf{\color{#f48522}{Breadboard}}}$  
 
@@ -668,7 +671,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 </details>
 
 <details>
- <summary  id="led-diodes">$\LARGE{\textsf{\color{black}{Led Diodes}}}$</summary><br><br>
+ <summary  id="led-diodes">$\LARGE{\textsf{\color{black}{  Led Diodes}}}$</summary><br><br>
  
  # Led Diodes
 
@@ -677,7 +680,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 </details>
 
 <details>
- <summary id="resistors">$\LARGE{\textsf{\color{black}{Resistors}}}$</summary><br><br>
+ <summary id="resistors">$\LARGE{\textsf{\color{black}{  Resistors}}}$</summary><br><br>
  
  # Resistors
 
@@ -686,7 +689,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 </details>
 
 <details>
- <summary id="jumper">$\LARGE{\textsf{\color{black}{Jumper Wires}}}$</summary><br><br>
+ <summary id="jumper">$\LARGE{\textsf{\color{black}{  Jumper Wires}}}$</summary><br><br>
 
  # Jumper Wires
 
@@ -695,7 +698,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 </details>
 
 <details>
- <summary id="raspberry-pi"> $\LARGE{\textsf{\color{black}{Raspberry Pi}}}$</summary><br><br>
+ <summary id="raspberry-pi"> $\LARGE{\textsf{\color{black}{  Raspberry Pi}}}$</summary><br><br>
 
  # Raspberry Pi
 
@@ -703,6 +706,32 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 
  
 </details>
+
+<br>
+<br>
+
+# $\large{\textsf{\color{black}{CLI commands}}}$  
+
+<br>
+
+- Push the code located on the local machine to Raspberry Pi:  
+```
+  rsync -avp oweley@192.168.1.224/temperature --mkpath
+```   
+- Search for available Arduino libraries:  
+```
+  platformio lib search "keyword"
+```   
+- Install the lib of your choice:  
+```
+  platformio lib install "Adafruit BME280 Sensor"
+```   
+- Upload the code from Raspberry Pi to Arduino:  
+```
+  pio run -t upload --upload-port /dev/ttyUSB0
+```  
+
+***
 
 <br>
 <br>
