@@ -451,15 +451,14 @@ void loop()
   <summary id="arduino-nano">$\LARGE{\textsf{\color{black}{Arduino Nano}}}$</summary>
  <br><br>
  
- ## $\Large{\textsf{\color{black}{Arduino Nano}}}$
+ # $\Large{\textbf{\color{#f48522}{Arduino Nano}}}$
  
   Arduino Nano is small — only 45 x 18 mm — which means it fits perfectly on a breadboard right alongside your other components.
   Arduino Nano's brain is ATmega328P Processor, running at 16 MHz . It's reliable, well-supported, and perfect for learning and prototyping.
     
 <br><br><br>
 
-
-## $\large{\textsf{\color{#f5750e}{Pin Breakdown}}}$
+### $\Large{\textbf{\color{#f48522}{Pin Breakdown}}}$
 
 <img alt="Arduino Nano Pinout" src="https://github.com/Anloms/Electronics/blob/main/Resources/Nano_pinout.png"/>
 
@@ -486,8 +485,8 @@ void loop()
 
 <br>
 
-  ### $\Large{\text{\color{#326a95}{Digital I/O Pin (0-13)}}}$
-  ### $\large{\text{\color{#326a95}{These 14 pins are designed to handle binary signals (on or off)}}}$
+  ### $\Large{\textsf{\color{#326a95}{Dital I/O Pin (0-13)}}}$
+  ### $\large{\textsf{\color{#326a95}{These 14 pins are designed to handle binary signals (on or off)}}}$
 
 
   - ***General Purpose:***  
@@ -499,7 +498,7 @@ void loop()
 
 <br>
 
-  ### $\Large{\text{\color{#326a95}{Analog Input Pins (A0-A7)}}}$
+  ### $\Large{\textsf{\color{#326a95}{Analog Input Pins (A0-A7)}}}$ 
   ### $\large{\text{\color{#326a95}{These pins are designed to read varying voltages from sensors (eg. temperature sensors)}}}$
 
 
@@ -507,8 +506,8 @@ void loop()
   - ***A6 and A7*** Restriction: On some boards (like the Nano), A6 and A7 are strictly analog input pins. Unlike A0 through A5, they cannot be used as digital input/output pins.  
 
 <br>
-
-  ### $\Large{\text{\color{#326a95}{Power Pins}}}$
+ 
+  ### $\Large{\textsf{\color{#326a95}{Power Pins}}}$ 
   ### $\large{\text{\color{#326a95}{These pins are used to provide power to the Arduino board itself or to power external components}}}$
 
   - ***VIN (7-12V):*** 
@@ -558,15 +557,14 @@ void loop()
 <details>
  <summary id="bme280">$\LARGE{\textsf{\color{black}{BME280}}}$</summary><br><br>
 
- # BME280
- 
+ # $\Large{\textbf{\color{#f48522}{BME280}}}$
 
 <img alt="BME280 pinout" src="https://github.com/Anloms/Electronics/blob/main/Resources/BME280_pinout.png">
 
 The BME280 is a combined environmental sensor that measures temperature, humidity, and barometric pressure all in one compact package.
 It's manufactured by Bosch Sensortec and is widely used in weather stations, indoor navigation, home automation, and IoT projects.
 
-## Specs  
+## $\Large{\textsf{\color{#326a95}{Specs}}}$  
 <br>
 
 | Parameter | Range | Accuracy |
@@ -577,7 +575,7 @@ It's manufactured by Bosch Sensortec and is widely used in weather stations, ind
 
 <br>
 
-## Pinout Description
+## $\Large{\textsf{\color{#326a95}{Pinout Description}}}$ 
 <br>
 
 | Pin | Name | Function |
@@ -606,7 +604,7 @@ It's manufactured by Bosch Sensortec and is widely used in weather stations, ind
 
 <br>
 
-## Why is it popular?
+## $\Large{\textsf{\color{#326a95}{Why is it so popular?}}}$
 <br>
 One of the BME280's strengths is its low power consumption:
     - 3.6 μA at 1Hz sampling rate (humidity, pressure, temperature).  
@@ -614,7 +612,9 @@ One of the BME280's strengths is its low power consumption:
 
 This makes it ideal for battery-powered projects.
 
-## Applications  
+<br>
+
+## $\Large{\textsf{\color{#326a95}{Applications}}}$   
 - Weather stations: Monitor environmental conditions  
 - Altitude tracking: Pressure changes with elevation   
 - Indoor navigation: Detect floor changes in buildings  
@@ -631,7 +631,7 @@ This makes it ideal for battery-powered projects.
 <details>
  <summary id="breadboard">$\LARGE{\textsf{\color{black}{Breadboard}}}$</summary><br><br>
 
- ## $\Large{\textsf{\color{black}{Breadboard}}}$
+ # Breadboard
 
  ***
  
@@ -640,7 +640,7 @@ This makes it ideal for battery-powered projects.
 <details>
  <summary  id="led-diodes">$\LARGE{\textsf{\color{black}{Led Diodes}}}$</summary><br><br>
  
- ## $\Large{\textsf{\color{black}{Led Diodes}}}$
+ # Led Diodes
 
  ***
  
@@ -649,7 +649,7 @@ This makes it ideal for battery-powered projects.
 <details>
  <summary id="resistors">$\LARGE{\textsf{\color{black}{Resistors}}}$</summary><br><br>
  
- ## $\Large{\textsf{\color{black}{Resistors}}}$
+ # Resistors
 
  ***
  
@@ -658,7 +658,7 @@ This makes it ideal for battery-powered projects.
 <details>
  <summary id="jumper">$\LARGE{\textsf{\color{black}{Jumper Wires}}}$</summary><br><br>
 
- ## $\Large{\textsf{\color{black}{Jumper Wires}}}$
+ # Jumper Wires
 
  ***
  
@@ -667,7 +667,7 @@ This makes it ideal for battery-powered projects.
 <details>
  <summary id="raspberry-pi"> $\LARGE{\textsf{\color{black}{Raspberry Pi}}}$</summary><br><br>
 
- ## $\Large{\textsf{\color{black}{Raspberry Pi}}}$
+ # Raspberry Pi
 
  ***
 
