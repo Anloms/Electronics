@@ -125,62 +125,63 @@ With the hardware connected, let's program the Arduino to talk to the sensor and
  
 ## $\Large{\textbf{\color{red}{Guide to writing the software yourself}}}$ 
 </summary>
-Understanding the Building Blocks:  
-Before we write a single line of code, let's understand what's happening behind the scenes when we want to read from the BME280 sensor.
 
-What Do We Need to Communicate?
-The BME280 communicates using I2C (Inter-Integrated Circuit). Think of I2C like a telephone party line:
-- SDA (Serial Data Line) is the conversation itself
-- SCL (Serial Clock) keeps everyone talking in rhythm
+Before we write a single line of code, let's understand what's happening behind the scenes when we want to read from the BME280 sensor.  
 
-Each device has a unique address so the Arduino knows who it's talking to  
+What Do We Need to Communicate?   
+The BME280 communicates using I2C (Inter-Integrated Circuit). Think of I2C like a telephone party line:   
+- SDA (Serial Data Line) is the conversation itself    
+- SCL (Serial Clock) keeps everyone talking in rhythm   
+Each device has a unique address so the Arduino knows who it's talking to.   
 
-Step 1: Including Libraries - Why Do We Need Them?
+Step 1: Including Libraries     
 ```
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
 ```   
-Why <Wire.h>?
+Why <Wire.h>?   
  This is Arduino's built-in I2C library. It's like learning the alphabet before writing a letter. Without Wire.h, your Arduino wouldn't know how to:
-     - Start and stop communication on the I2C bus
-     - Send bytes of data
-     - Request data from sensors
-     - Handle the timing of the clock signal  
+ - Start and stop communication on the I2C bus
+ - Send bytes of data
+ - Request data from sensors
+ - Handle the timing of the clock signal  
 
-What happens inside? Wire.h translates your commands into electrical signals on the SDA and SCL pins.
+What happens inside?  
+   Wire.h translates your commands into electrical signals on the SDA and SCL pins.    
 
-Why <Adafruit_Sensor.h>?
-  This is a统一 (unified) interface library. Think of it as a universal translator. It ensures that all sensors (BME280, humidity sensors, motion sensors, etc.) speak a similar language. It provides:
-     - Standardized ways to get sensor data
-     - Consistent data structures (like sensor_t for sensor info)
-     - Common methods like getEvent() across different sensors
+Why <Adafruit_Sensor.h>?   
+  This is an interface library. Think of it as a universal translator. It ensures that all sensors (BME280, humidity sensors, motion sensors, etc.) speak a similar language. It provides:  
+  - Standardized ways to get sensor data   
+  - Consistent data structures (like sensor_t for sensor info)   
+  - Common methods like getEvent() across different sensors   
      
-Why <Adafruit_BME280.h>?
-  This is the BME280's personal interpreter. It knows:
-     - The exact I2C commands the BME280 understands
-     - How to request temperature vs. humidity vs. pressure
-     - How to convert the raw bits from the sensor into actual Celsius degrees
-     - The sensor's specific register addresses (where data is stored)
+Why <Adafruit_BME280.h>?   
+  This is the BME280's personal interpreter. It knows:  
+  - The exact I2C commands the BME280 understands   
+  - How to request temperature vs. humidity vs. pressure   
+  - How to convert the raw bits from the sensor into actual Celsius degrees   
+  - The sensor's specific register addresses (where data is stored)   
 
 Without it, you'd need to read the BME280's 78-page datasheet and manually send register commands!  
 
-Step 2: Creating the Sensor Object
+Step 2: Creating the Sensor Object   
 ```
 Adafruit_BME280 bme;
 ```
-This line doesn't communicate with the sensor yet. It's like buying a phone and putting it on your desk. The phone exists (the object is created), but it's not connected to a line yet. The object bme now has "methods" (functions) we can use later, like:
-    - bme.begin() - Connect to the actual sensor
-    - bme.readTemperature() - Get temperature reading
-    - bme.readHumidity() - Get humidity reading
+
+This line doesn't communicate with the sensor yet. It's like buying a phone and putting it on your desk. The phone exists (the object is created), but it's not connected to a line yet. The object bme now has "methods" (functions) we can use later, like:  
+ - bme.begin() - Connect to the actual sensor  
+ - bme.readTemperature() - Get temperature reading  
+ - bme.readHumidity() - Get humidity reading  
     
-Step 3: Macros - Why Use #define?
+Step 3: Macros - Why Use #define?   
 ```
 #define SEALEVELPRESSURE_HPA (1013.25)
 ```
 
-What is a Macro?
-  A macro is a find-and-replace that happens before your code compiles. Everywhere you write SEALEVELPRESSURE_HPA, the compiler replaces it with 1013.25.
+What is a Macro?      
+  A macro is a find-and-replace that happens before your code compiles. Everywhere you write SEALEVELPRESSURE_HPA, the compiler replaces it with 1013.25.  
 
 Why Use Macros Instead of Variables?   
 ```
@@ -190,13 +191,13 @@ float seaLevelPressure = 1013.25;  // Takes up memory
 // Using a macro:
 #define SEALEVELPRESSURE_HPA (1013.25)  // No memory used!
 ```
-Key benefits:
-    - Zero memory usage - The value is inserted directly into the code
-    - Cannot be accidentally changed - It's not a variable, so no code can modify it
-    - Better documentation - The name explains what the number means
-    - Easy updates - Change it once, and it updates everywhere   
+Key benefits:  
+- Zero memory usage - The value is inserted directly into the code   
+- Cannot be accidentally changed - It's not a variable, so no code can modify it    
+- Better documentation - The name explains what the number means   
+- Easy updates - Change it once, and it updates everywhere   
 
-Step 4: The setup() Function - Your Startup Checklist
+Step 4: The setup() Function   
 ```
 void setup() {
   Serial.begin(9600);
@@ -207,48 +208,45 @@ void setup() {
   }
 }
 ```  
-Why Serial.begin(9600)?
-    This opens a communication channel between your Arduino and computer. Think of it as opening a walkie-talkie channel:
-        - Serial - The walkie-talkie itself
-        - begin(9600) - Tuning to channel "9600" (baud rate)
-9600 means 9600 bits per second. It's like agreeing to talk at a certain speed so you can understand each other. Both devices must use the same speed!
+Why Serial.begin(9600)?  
+  This opens a communication channel between your Arduino and computer. Think of it as opening a walkie-talkie channel:  
+  - Serial - The walkie-talkie itself   
+  - begin(9600) - Tuning to channel "9600" (baud rate)  
+9600 means 9600 bits per second. It's like agreeing to talk at a certain speed so you can understand each other. Both devices must use the same speed!  
 
 Without this line, Serial.println() would have nowhere to send the data.
 
-The Magic of bme.begin(0x76)
-This is where the actual conversation with the sensor begins:
+The Magic of bme.begin(0x76)   
+This is where the actual conversation with the sensor begins:   
 ```
 if (!bme.begin(0x76)) {
 ```
-This line does so much behind the scenes:
-   - Activates the I2C bus through Wire.h
-   - Sends a "ping" to address 0x76 to see if anything responds
-   - Reads the chip ID from the sensor to confirm it's really a BME280
-   - Reads calibration data from the sensor's memory
-   - Configures the sensor's default settings (sampling rates, filter, etc.)
+This line does so much behind the scenes:  
+- Activates the I2C bus through Wire.h  
+- Sends a "ping" to address 0x76 to see if anything responds   
+- Reads the chip ID from the sensor to confirm it's really a BME280  
+- Reads calibration data from the sensor's memory   
+- Configures the sensor's default settings (sampling rates, filter, etc.)   
 
-Why 0x76? Check your sensor:
-
-Most BME280 boards use address 0x76. Some use 0x77 (check the manufacturer's documentation). You can sometimes change it by soldering pads on the board.
+Why 0x76?
+Most BME280 boards use address 0x76.  
 
 The ! means "if NOT successful". If the sensor doesn't respond, we print an error and stop with while(1) (infinite loop).
 
 Step 5: Available Functions - Your Toolkit
 Once bme.begin() succeeds, you have access to these main functions:
-
 Temperature Functions:  
 ```
 float tempC = bme.readTemperature();      // Returns Celsius (default)
-float tempF = tempC * 9.0/5.0 + 32.0;     // Convert to Fahrenheit yourself
-```   
-What happens inside?
-- Sensor measures voltage across its temperature-sensitive element
-- Converts analog reading to digital bits
-- Arduino requests these raw bits via I2C
-- Library applies calibration formulas from the sensor
-- Returns a nice float value in Celsius
+```     
+What happens inside?   
+- Sensor measures voltage across its temperature-sensitive element  
+- Converts analog reading to digital bits  
+- Arduino requests these raw bits via I2C  
+- Library applies calibration formulas from the sensor  
+- Returns a nice float value in Celsius  
 
-Step 6: The loop() Function - Continuous Monitoring
+Step 6: The loop() Function - Continuous Monitoring  
 ```
 void loop() {
   float temperature = bme.readTemperature();
