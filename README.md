@@ -423,7 +423,7 @@ void loop()
 
 - Push the code located on the local machine to Raspberry Pi:  
 ```
-  rsync -avp oweley@192.168.1.224/temperature_AM2302 --mkpath
+  rsync -avp oweley@192.168.1.224/temperature --mkpath
 ```   
 - Search for available Arduino libraries:  
 ```
@@ -559,6 +559,22 @@ void loop()
  <summary id="bme280">$\LARGE{\textsf{\color{black}{BME280}}}$</summary><br><br>
 
  ## $\Large{\textsf{\color{black}{BME280}}}$
+
+<img alt="BME280 pinout" src="https://github.com/Anloms/Electronics/blob/main/Resources/BME280_pinout.png">
+
+The BME280 is a combined environmental sensor that measures temperature, humidity, and barometric pressure all in one compact package.
+It's manufactured by Bosch Sensortec and is widely used in weather stations, indoor navigation, home automation, and IoT projects.
+
+## Specs  
+<br>
+
+| Parameter | Range | Accuracy |
+| :---: | :---: | :---: |
+| Temperature | -40°C to +85°C | ±1.0°C |
+| Humidity | 0 - 100% | ±3% |
+| Pressure | 300 - 1100 hPa | ±1 hPa |
+
+<br>
 
 ******************
 
