@@ -416,27 +416,32 @@ void loop()
 <br>
 <br>
 
-## Useful utilities and commands:   
-
-  ```bash
-  platformio lib install "AM2302-Sensor"
-  ```
-  ```bash
-  rsync -avp oweley@192.168.1.224/temperature_AM2302 --mkpath
-  ```
-  ```bash
-  pio run -t upload --upload-port /dev/ttyUSB0
-  ```
-  
-
-# Troubleshooting
-When using Rapbery Pi as an intermediary between Arduino, test whether Ardino is responsive:  
-```
-PORT="/dev/ttyUSB0" && sudo stty -F $PORT 9600 raw -echo 2>&1 && echo $?
-```
-If result is `0` then Arduino indeed is responsive.
+# $\large{\textsf{\color{black}{CLI commands}}}$  
 
 <br>
+
+- Push the code located on the local machine to Raspberry Pi:  
+```
+  rsync -avp oweley@192.168.1.224/temperature_AM2302 --mkpath
+```   
+- Search for available Arduino libraries:  
+```
+  platformio lib search "keyword"
+```   
+- Install the lib of your choice:  
+```
+  platformio lib install "Adafruit BME280 Sensor"
+```   
+- Upload the code from Raspberry Pi to Arduino:  
+```
+  pio run -t upload --upload-port /dev/ttyUSB0
+```  
+
+***
+
+<br>
+
+ 
 
 # $\large{\textsf{\color{black}{Components - the closer look}}}$   
 
@@ -603,3 +608,19 @@ If result is `0` then Arduino indeed is responsive.
 
  
 </details>
+
+<br>
+<br>
+
+# $\large{\textsf{\color{black}{Troubleshooting}}}$ 
+<br>
+
+When using Rapbery Pi as an intermediary between Arduino, test whether Ardino is responsive:  
+```
+PORT="/dev/ttyUSB0" && sudo stty -F $PORT 9600 raw -echo 2>&1 && echo $?
+```
+If result is `0` then Arduino indeed is responsive.
+
+<br>
+
+***
