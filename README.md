@@ -128,7 +128,7 @@ With the hardware connected, let's program the Arduino to talk to the sensor and
 
 Before we write a single line of code, let's understand what's happening behind the scenes when we want to read from the BME280 sensor.  
 
-:bulb:What Do We Need to Communicate?   
+How do we communicate?   
 The BME280 communicates using I2C (Inter-Integrated Circuit). Think of I2C like a telephone party line:   
 - SDA (Serial Data Line) is the conversation itself    
 - SCL (Serial Clock) keeps everyone talking in rhythm   
@@ -140,31 +140,41 @@ Step 1: Including Libraries
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
 ```   
-:bulb:Why <Wire.h>?   
- This is Arduino's built-in I2C library. It's like learning the alphabet before writing a letter. Without Wire.h, your Arduino wouldn't know how to:
- - Start and stop communication on the I2C bus
- - Send bytes of data
- - Request data from sensors
- - Handle the timing of the clock signal  
+<details><summary>:bulb:FAQ</summary>
+ <details><summary>:bulb:Why do we need `Wire.h`? </summary>
 
-:bulb:What happens inside?  
-   Wire.h translates your commands into electrical signals on the SDA and SCL pins.    
-
-:bulb:Why <Adafruit_Sensor.h>?   
+  This is Arduino's built-in I2C library. It's like learning the alphabet before writing a letter. Without Wire.h, your Arduino wouldn't know how to:
+  - Start and stop communication on the I2C bus
+  - Send bytes of data
+  - Request data from sensors
+  - Handle the timing of the clock signal 
+ </details>
+  <details>
+   <summary>:bulb:What does Wire.h do?</summary>
+   Wire.h translates your commands into electrical signals on the SDA and SCL pins.
+  </details>
+    <details>
+   <summary>:bulb:Why do we need Adafruit_Sensor.h? </summary>
+    
   This is an interface library. Think of it as a universal translator. It ensures that all sensors (BME280, humidity sensors, motion sensors, etc.) speak a similar language. It provides:  
   - Standardized ways to get sensor data   
   - Consistent data structures (like sensor_t for sensor info)   
-  - Common methods like getEvent() across different sensors   
-     
-:bulb:Why <Adafruit_BME280.h>?   
+  - Common methods like getEvent() across different sensors  
+  </details>
+    <details>
+   <summary>:bulb: Why do we need Adafruit_BME280.h? </summary>
+
   This is the BME280's personal interpreter. It knows:  
   - The exact I2C commands the BME280 understands   
   - How to request temperature vs. humidity vs. pressure   
   - How to convert the raw bits from the sensor into actual Celsius degrees   
   - The sensor's specific register addresses (where data is stored)   
 
-Without it, you'd need to read the BME280's 78-page datasheet and manually send register commands!  
+Without it, you'd need to read the BME280's 78-page datasheet and manually send register commands! 
+  </details>
+</details>
 
+ 
 Step 2: Creating the Sensor Object   
 ```
 Adafruit_BME280 bme;
