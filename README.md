@@ -564,7 +564,7 @@ void loop()
 The BME280 is a combined environmental sensor that measures temperature, humidity, and barometric pressure all in one compact package.
 It's manufactured by Bosch Sensortec and is widely used in weather stations, indoor navigation, home automation, and IoT projects.
 
-## $\Large{\textsf{\color{#326a95}{Specs
+## Specs
 <br>
 
 | Parameter | Range | Accuracy |
@@ -575,7 +575,7 @@ It's manufactured by Bosch Sensortec and is widely used in weather stations, ind
 
 <br>
 
-## $\Large{\textsf{\color{#326a95}{Pinout Description}}}$ 
+## Pinout Description 
 <br>
 
 | Pin | Name | Function |
@@ -604,7 +604,7 @@ It's manufactured by Bosch Sensortec and is widely used in weather stations, ind
 
 <br>
 
-## $\Large{\textsf{\color{#326a95}{Why is it so popular?}}}$
+## Why is it so popular?
 <br>
 One of the BME280's strengths is its low power consumption:
     - 3.6 μA at 1Hz sampling rate (humidity, pressure, temperature).  
@@ -614,7 +614,7 @@ This makes it ideal for battery-powered projects.
 
 <br>
 
-## $\Large{\textsf{\color{#326a95}{Applications}}}$   
+## Applications   
 - Weather stations: Monitor environmental conditions  
 - Altitude tracking: Pressure changes with elevation   
 - Indoor navigation: Detect floor changes in buildings  
@@ -629,7 +629,7 @@ This makes it ideal for battery-powered projects.
 </details>
 
 <details>
- <summary id="breadboard">$  Breadboard</summary><br><br>
+ <summary id="breadboard">   Breadboard</summary><br><br>
 
 # Breadboard
 
@@ -639,7 +639,7 @@ A breadboard is a reusable prototyping tool that lets you build electronic circu
 
 <br>
 
-## $\Large{\textsf{\color{#326a95}{The Anatomy of a Breadboard}}}$
+## The Anatomy of a Breadboard
 
 1. Holes (Tie Points)  
 Those hundreds of tiny holes are where you insert component legs and jumper wires. Each hole is connected to others underneath in a specific pattern.
@@ -655,7 +655,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 
 <br>
 
-## $\Large{\textsf{\color{#326a95}{What is the origin of the name?}}}$  
+## What is the origin of the name? 
 
 <br>
 
