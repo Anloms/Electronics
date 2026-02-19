@@ -102,18 +102,19 @@ With the hardware connected, let's program the Arduino to talk to the sensor and
 
 <br>
 
-# $\large{\textbf{\color{black}{Choose the difficulty level:}}}$   
+# Choose the difficulty level
 <br>
-<br>
-<details><summary> 
- 
-## $\large{\textsf{\color{#D1242F}{    Guide to writing the software yourself}}}$ 
+
+<details>
+<summary>
+
+## Guide to writing the software yourself
+
 </summary>   
 
 <br>
 
-### $\large{\textsf{\color{#326a95}{Step 1: Including Libraries}}}$  
-
+### Step 1: Including Libraries
 <br>
 
 ```
@@ -180,7 +181,7 @@ With the hardware connected, let's program the Arduino to talk to the sensor and
 
 <br>
 
-### $\large{\textsf{\color{#326a95}{Step 1: Creating the Sensor Object}}}$ 
+### Step 1: Creating the Sensor Object
 
 <br>
 
@@ -195,7 +196,7 @@ This line doesn't communicate with the sensor yet. It's like buying a phone and 
 
 <br>
 
-### $\large{\textsf{\color{#326a95}{Step 3: Macros - Why Use define?}}}$
+### Step 3: Macros - Why Use define?
 
 <br>
 
@@ -244,7 +245,7 @@ This line doesn't communicate with the sensor yet. It's like buying a phone and 
 
 <br>
 
-### $\large{\textsf{\color{#326a95}{Step 4: The setup() Function}}}$   
+### Step 4: The setup() Function
 
 <br>
 
@@ -314,7 +315,7 @@ void setup() {
 
 <br>
 
-### $\large{\textsf{\color{#326a95}{Step 5: Available Functions - Your Toolkit}}}$
+### Step 5: Available Functions - Your Toolkit
 
 <br>
 
@@ -332,7 +333,7 @@ What happens inside?
 
 <br>
 
-### $\large{\textsf{\color{#326a95}{Step 6: The loop() Function - Continuous Monitoring}}}$  
+### Step 6: The loop() Function - Continuous Monitoring
 
 <br>
 
@@ -382,7 +383,7 @@ void loop() {
 
 <details><summary> 
  
-## $\large{\textsf{\color{#54aeff}{    Just copy the code}}}$
+## Just copy the code
 </summary>
  
 ### $\large{\textsf{\color{black}{BME280 code}}}$  
