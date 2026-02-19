@@ -40,6 +40,33 @@
 
 <br><br>
 
+# CLI Flow
+
+<br>
+In a process of prototyping 
+
+- Push the code located on the local machine to Raspberry Pi:  
+```
+  rsync -avp oweley@192.168.1.224/temperature --mkpath
+```   
+- Search for available Arduino libraries:  
+```
+  platformio lib search "keyword"
+```   
+- Install the lib of your choice:  
+```
+  platformio lib install "Adafruit BME280 Sensor"
+```   
+- Upload the code from Raspberry Pi to Arduino:  
+```
+  pio run -t upload --upload-port /dev/ttyUSB0
+```  
+
+***
+
+<br>
+<br>
+
 # Flow - Part 1
 <br><br>
 
