@@ -80,7 +80,8 @@
       - I2C Clock (SCL): Use a jumper wire to connect the SCL pin on the sensor to the A5 pin on the Arduino Uno. (On an Uno, A5 is the hardware pin for the I2C clock). 
  <br>
 
-### $\Large{\textbf{\color{#f48522}{4. The Software - Reading the Sensor}}}$     
+### 4. The Software - Reading the Sensor 
+ 
 With the hardware connected, let's program the Arduino to talk to the sensor and show us what it sees.  
 > [!IMPORTANT]
 > Arduino code, including the code we write in PlatformIO, is structured around a simple but powerful execution model using two mandatory functions.
@@ -386,7 +387,7 @@ void loop() {
 ## Just copy the code
 </summary>
  
-### $\large{\textsf{\color{black}{BME280 code}}}$  
+### BME280 code
 
 ```   
 #include <Wire.h>
@@ -439,14 +440,14 @@ void loop()
 
  
 
-# $\large{\textsf{\color{black}{Components - the closer look}}}$   
+# Components - the closer look
 
 <br><br>
 <details>
-  <summary id="arduino-nano">$\LARGE{\textsf{\color{black}{  Arduino Nano}}}$</summary>
+  <summary id="arduino-nano">   Arduino Nano</summary>
  <br><br>
  
- # $\Large{\textbf{\color{#f48522}{Arduino Nano}}}$
+ # Arduino Nano
  
   Arduino Nano is small — only 45 x 18 mm — which means it fits perfectly on a breadboard right alongside your other components.
   Arduino Nano's brain is ATmega328P Processor, running at 16 MHz . It's reliable, well-supported, and perfect for learning and prototyping.
@@ -545,25 +546,25 @@ void loop()
 
 </details>
 <details>
- <summary id="tm1638">$\LARGE{\textsf{\color{black}{  TM1638}}}$</summary> <br><br>
+ <summary id="tm1638">  TM1638</summary> <br><br>
  
- ## $\Large{\textsf{\color{black}{TM1638}}}$
+ ## TM1638
 
  *************
  
 </details>
 
 <details>
- <summary id="bme280">$\LARGE{\textsf{\color{black}{  BME280}}}$</summary><br><br>
+ <summary id="bme280">  BME280</summary><br><br>
 
- # $\Large{\textbf{\color{#f48522}{BME280}}}$
+ # BME280
 
 <img alt="BME280 pinout" src="https://github.com/Anloms/Electronics/blob/main/Resources/BME280_pinout.png">
 
 The BME280 is a combined environmental sensor that measures temperature, humidity, and barometric pressure all in one compact package.
 It's manufactured by Bosch Sensortec and is widely used in weather stations, indoor navigation, home automation, and IoT projects.
 
-## $\Large{\textsf{\color{#326a95}{Specs}}}$  
+## $\Large{\textsf{\color{#326a95}{Specs
 <br>
 
 | Parameter | Range | Accuracy |
@@ -628,9 +629,9 @@ This makes it ideal for battery-powered projects.
 </details>
 
 <details>
- <summary id="breadboard">$\LARGE{\textsf{\color{black}{  Breadboard}}}$</summary><br><br>
+ <summary id="breadboard">$  Breadboard</summary><br><br>
 
-# $\Large{\textbf{\color{#f48522}{Breadboard}}}$  
+# Breadboard
 
 <br>
 
@@ -667,7 +668,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 </details>
 
 <details>
- <summary  id="led-diodes">$\LARGE{\textsf{\color{black}{  Led Diodes}}}$</summary><br><br>
+ <summary  id="led-diodes">  Led Diodes</summary><br><br>
  
  # Led Diodes
 
@@ -676,7 +677,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 </details>
 
 <details>
- <summary id="resistors">$\LARGE{\textsf{\color{black}{  Resistors}}}$</summary><br><br>
+ <summary id="resistors">  Resistors</summary><br><br>
  
  # Resistors
 
@@ -685,7 +686,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 </details>
 
 <details>
- <summary id="jumper">$\LARGE{\textsf{\color{black}{  Jumper Wires}}}$</summary><br><br>
+ <summary id="jumper">  Jumper Wires</summary><br><br>
 
  # Jumper Wires
 
@@ -694,7 +695,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 </details>
 
 <details>
- <summary id="raspberry-pi"> $\LARGE{\textsf{\color{black}{  Raspberry Pi}}}$</summary><br><br>
+ <summary id="raspberry-pi">   Raspberry Pi</summary><br><br>
 
  # Raspberry Pi
 
@@ -706,7 +707,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 <br>
 <br>
 
-# $\large{\textsf{\color{black}{CLI commands}}}$  
+# CLI commands
 
 <br>
 
