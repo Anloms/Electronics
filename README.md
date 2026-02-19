@@ -454,7 +454,7 @@ void loop()
     
 <br><br><br>
 
-### $\Large{\textbf{\color{#f48522}{Pin Breakdown}}}$
+### Pin Breakdown
 
 <img alt="Arduino Nano Pinout" src="https://github.com/Anloms/Electronics/blob/main/Resources/Nano_pinout.png"/>
 
@@ -481,9 +481,9 @@ void loop()
 
 <br>
 
-  ### $\Large{\textsf{\color{#326a95}{Dital I/O Pin (0-13)}}}$
+  ### Dital I/O Pin (0-13)
   
-  ### $\large{\textsf{\color{#326a95}{These 14 pins are designed to handle binary signals (on or off)}}}$
+  ### These 14 pins are designed to handle binary signals (on or off)
 
 
   - ***General Purpose:***  
@@ -495,9 +495,9 @@ void loop()
 
 <br>
 
-  ### $\Large{\textsf{\color{#326a95}{Analog Input Pins (A0-A7)}}}$ 
+  ### Analog Input Pins (A0-A7) 
   
-  ### $\large{\text{\color{#326a95}{These pins are designed to read varying voltages from sensors (eg. temperature sensors)}}}$
+  ### These pins are designed to read varying voltages from sensors (eg. temperature sensors)
 
 
   - ***10-bit ADC:*** They use an Analog-to-Digital Converter. The "10-bit" means they map input voltages between 0 and 5V into integer values between 0 and 1023.  
@@ -505,9 +505,9 @@ void loop()
 
 <br>
  
-  ### $\Large{\textsf{\color{#326a95}{Power Pins}}}$ 
+  ### Power Pins
   
-  ### $\large{\text{\color{#326a95}{These pins are used to provide power to the Arduino board itself or to power external components}}}$
+  ### These pins are used to provide power to the Arduino board itself or to power external components
 
   - ***VIN (7-12V):*** 
     This is the input voltage pin. If you are using an unregulated power supply (like a battery), you connect the positive lead here. The board has a voltage regulator that converts this down to the 5V needed for operation.  
@@ -520,9 +520,9 @@ void loop()
 
 <br>
 
-  ### $\Large{\textsf{\color{#326a95}{Specialized Pins}}}$  
+  ### Specialized Pins  
   
-  ### $\large{\textsf{\color{#326a95}{These pins handle specific functions related to the microcontroller's operation}}}$  
+  ### These pins handle specific functions related to the microcontroller's operation  
 
 
   - ***RST (Reset):*** 
@@ -532,12 +532,12 @@ void loop()
 
  <br><br><br>   
     
-  ### $\Large{\textsf{\color{black}{Communication Skills}}}$  
+  ### Communication Skills  
    - I²C — talks to sensors like your BME280 (only needs 2 wires!).   
    - SPI — faster communication for displays and modules.   
    - Serial (UART) — chats with your computer to debug or send data.   
 
-  ### $\Large{\textsf{\color{black}{Useful links}}}$  
+  ### Useful links  
   - [More about pins](https://leecuriosity.com/arduino-nano-pinout-full-guide-for-beginners/)  
 
 <br>
@@ -733,7 +733,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 <br>
 <br>
 
-# $\large{\textsf{\color{black}{Troubleshooting}}}$ 
+# Troubleshooting
 <br>
 
 When using Rapbery Pi as an intermediary between Arduino, test whether Ardino is responsive:  
