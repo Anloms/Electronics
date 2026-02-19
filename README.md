@@ -1,9 +1,9 @@
 
-# $\Huge{\textsf{\color{black}{Guide}}}$  
+# Guide 
 
 <br>
 
- # $\large{\textsf{\color{black}{Objective}}}$  
+ # Objective
  <br>
   
   We’ll get hands-on with the BME280 sensor — a cool little device that measures temperature, humidity, and air pressure
@@ -23,8 +23,7 @@
 
   <br>
   
-  # $\large{\textsf{\color{black}{Components list}}}$    
-
+  # Components list
   <br><br>
   
 |  | Component | Description | Image | Details |
@@ -41,19 +40,19 @@
 
 <br><br>
 
-# $\large{\textsf{\color{black}{Flow - Part 1}}}$    
-
+# Flow - Part 1
 <br><br>
 
-### $\Large{\textbf{\color{#f48522}{1. Setting Up Your Breadboard and Arduino }}}$ 
-   Before we connect any fancy sensors, we need to give our Arduino a stable home on the breadboard and provide it with power.   
+### Step 1. Setting Up Your Breadboard and Arduino
+  Before we connect any fancy sensors, we need to give our Arduino a stable home on the breadboard and provide it with power.   
    - Gently place your Arduino Uno board onto the breadboard so it straddles the center gap. Place it at the very top to leave plenty of room below for your circuit. The USB port should hang slightly over the edge.   
 
   > [!TIP]
   > Make sure no pins are bent underneath and that the board is seated firmly but gently.   
 <br>
 
-### $\Large{\textbf{\color{#f48522}{2. Provide power to the breadboard}}}$   
+### 2. Provide power to the breadboard
+  
   The Arduino has pins that can provide power, but we need to connect them to the breadboard's power rails (the long rows of holes marked with red and blue lines on the side).
   - Take a red male-to-male jumper wire. Connect one end to the 5V pin on the Arduino. Connect the other end to a hole in the red (positive) rail on your breadboard.  
   - Take a black (or blue) male-to-male jumper wire. Connect one end to a GND (ground) pin on the Arduino. Connect the other end to a hole in the blue (negative) rail on your breadboard.  
@@ -62,8 +61,8 @@
 > Why this matters: Now, any component that needs power can draw it from these rails, keeping your circuit organized.    
 <br>
 
-### $\Large{\textbf{\color{#f48522}{3. Connecting the BME280 Sensor}}}$  
-  Now for the star of the show. We'll connect the sensor using a communication method called I2C, which only uses two wires.   
+### 3. Connecting the BME280 Sensor
+  Now for the star of the show we'll connect the sensor using a communication method called I2C, which only uses two wires.   
         
    > [!Important]
    > [Click me to see BME280 data](#BME280)  or [me to see Arduino Nano Pin-out](#Arduino-Nano)  
