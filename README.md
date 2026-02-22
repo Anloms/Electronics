@@ -51,7 +51,7 @@
 
 <br><br>
 
-🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Glossary)  
 
 <br>
 
@@ -204,7 +204,7 @@ Now that you've built your circuit and written a test sketch on your local machi
 <br>
 <br>
 
-🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Glossary)  
 
 <br>
 
@@ -303,7 +303,7 @@ With the hardware connected, let's program the Arduino to talk to the sensor and
 
 <br>
 
-🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Glossary)  
 
 <br>
 
@@ -642,7 +642,7 @@ void loop()
 
 <br>
 
-🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Glossary)  
 
 <br>
 
@@ -758,7 +758,7 @@ void loop()
 
 <br>
 
-🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Glossary)  
 
 <br>
 
@@ -773,7 +773,7 @@ void loop()
 
 <br>
 
-🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Glossary)  
 
 <br>
 
@@ -850,7 +850,7 @@ This makes it ideal for battery-powered projects.
 
 <br>
 
-🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Glossary)  
 
 <br>
 
@@ -894,7 +894,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 
 <br>
 
-🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Glossary)  
 
 <br>
 
@@ -911,7 +911,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 
 <br>
 
-🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Glossary)  
 
 <br>
 
@@ -926,7 +926,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 
 <br>
 
-🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Glossary)  
 
 <br>
 
@@ -941,7 +941,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 
 <br>
 
-🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Glossary)  
 
 <br>
 
@@ -956,7 +956,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 
  <br>
 
-🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Glossary)  
 
 <br>
 
@@ -1008,7 +1008,7 @@ If result is `0` then Arduino indeed is responsive.
 
 <br>
 
-🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Glossary)  
 
 <br>
 
