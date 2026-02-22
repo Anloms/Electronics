@@ -5,9 +5,9 @@
   1. [Objective](#Objective)  
   2. [Components List](#Components-List)  
   3. [Testing Your Circuit: From Code to Arduino via Raspberry Pi](#Testing-Your-Circuit)   
-  4. [Flow - Part 1](#Flow-/-/-Part-1)   
+  4. [Building the Circuit](#Building-the-Circuit)   
   5. [Choose - step-by-step guide or copy the code](#Choose-the-difficulty-level)   
-  6. [Components - the closer look](#Components)  
+  6. [Understanding Our Components](#Understanding-Our-Components)  
   
   <br>
   
@@ -200,7 +200,7 @@ Now that you've built your circuit and written a test sketch on your local machi
 <br>
 <br>
 
-# Flow - Part 1
+# Building the Circuit
 <br><br>
 
 ### Setting Up Your Breadboard and Arduino
@@ -632,7 +632,7 @@ void loop()
 
  
 
-# Components - the closer look
+# Understanding Our Components    
 
 <br><br>
 <details>
