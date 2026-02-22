@@ -669,6 +669,8 @@ void loop()
 
 # Building the TM1638 Circuit: Display and LEDs  
   Now that your BME280 sensor is working, we'll expand your circuit to include visual output. The TM1638 module gives you both an 8-digit seven-segment display and 8 individual LEDs – perfect for showing sensor readings in a more engaging way.   
+  
+  <br>
 
 > [!NOTE]
 >
@@ -680,6 +682,8 @@ void loop()
 >  - DIO (Data) : The actual information being sent   
 >  This 3-wire setup lets you control both the display segments and individual LEDs with just three Arduino pins.   
 >
+
+<br>
 
 ## Prepare your breadboard  
 
@@ -724,6 +728,8 @@ void loop()
   - Connect one end to the DIO terminal on the TM1638   
   - Connect the other end to Arduino digital pin 10   
 
+  <br>
+
   > [!NOTE]
   >
   >  Pin Selection  
@@ -735,6 +741,8 @@ void loop()
   >
   > You can use different pins if needed – just update your code accordingly.  
   > 
+
+  <br>
   
 ## 💡 What Your Complete Circuit Can Do  
 You now have a powerful combination:  
@@ -751,11 +759,13 @@ Everything shares the same power and ground rails – clean and organized!
 
 🏃‍♂️ [Jump back to the Glossary](#Table-of-Contents)  
 
+***
+
 <br>
 
 # Understanding Our Components    
 
-<br><br>
+<br>
 <details>
   <summary id="arduino-nano">   Arduino Nano</summary>
  <br><br>
