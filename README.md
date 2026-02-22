@@ -192,7 +192,7 @@ Now that you've built your circuit and written a test sketch on your local machi
 # Flow - Part 1
 <br><br>
 
-### Step 1. Setting Up Your Breadboard and Arduino
+### Setting Up Your Breadboard and Arduino
   Before we connect any fancy sensors, we need to give our Arduino a stable home on the breadboard and provide it with power.   
    - Gently place your Arduino Uno board onto the breadboard so it straddles the center gap. Place it at the very top to leave plenty of room below for your circuit. The USB port should hang slightly over the edge.   
 
@@ -202,12 +202,35 @@ Now that you've built your circuit and written a test sketch on your local machi
 
 ### 2. Provide power to the breadboard
   
-  The Arduino has pins that can provide power, but we need to connect them to the breadboard's power rails (the long rows of holes marked with red and blue lines on the side).
-  - Take a red male-to-male jumper wire. Connect one end to the 5V pin on the Arduino. Connect the other end to a hole in the red (positive) rail on your breadboard.  
-  - Take a black (or blue) male-to-male jumper wire. Connect one end to a GND (ground) pin on the Arduino. Connect the other end to a hole in the blue (negative) rail on your breadboard.  
+  Now that your Arduino is connected to the Raspberry Pi via USB, it's receiving power. The Arduino's onboard regulator takes the USB power and makes it available through its pins – but we need to bring that power to the breadboard where your components will live.
+
+The breadboard has long rows of holes on each side, marked with red (+) and blue (-) lines. These are called power rails – they act like electrical highways, letting you distribute power to multiple components without messy wiring.   
+- Connect Power (5V)   
+  Take a red male-to-male jumper wire. Connect one end to the 5V pin on the Arduino. Connect the other end to any hole in the red (positive) rail on your breadboard.    
+- Connect Ground (GND)  
+  Take a black (or blue) male-to-male jumper wire. Connect one end to a GND (ground) pin on the Arduino. Connect the other end to any hole in the blue (negative) rail on your breadboard.
+
 
 > [!NOTE]
-> Why this matters: Now, any component that needs power can draw it from these rails, keeping your circuit organized.    
+> 🔌 Where Does the Power Come From?
+> Your Arduino is powered through its USB connection to the Raspberry Pi. The Raspberry Pi provides 5V power over the USB cable, which flows into the Arduino.  
+> From there, the Arduino's 5V pin outputs that same power to your breadboard.
+> 
+
+- Connect Both Rails (Optional but Recommended)   
+For more complex circuits, you might want both sides of the breadboard to have power. Use additional jumper wires to connect the red rails together and the blue rails together:   
+    - Connect a red jumper from the left red rail to the right red rail   
+    - Connect a black/blue jumper from the left blue rail to the right blue rail   
+This ensures that components placed anywhere on the breadboard can access power.   
+<br>
+
+> [!NOTE]
+>
+>📝 Why This Matters
+>
+> You're not just "providing power" – you're creating a power distribution system. By connecting the Arduino's power pins to the breadboard rails, you're making electrical current readily available for any 
+> component you'll add later.
+>
 <br>
 
 ### 3. Connecting the BME280 Sensor
