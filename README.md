@@ -51,6 +51,10 @@
 
 <br><br>
 
+🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+
+<br>
+
 # Testing Your Circuit: From Code to Arduino via Raspberry Pi   
 
 Now that you've built your circuit and written a test sketch on your local machine, you'll need to transfer that code to your Raspberry Pi and upload it to your Arduino. This guide walks you through the complete workflow.
@@ -200,6 +204,10 @@ Now that you've built your circuit and written a test sketch on your local machi
 <br>
 <br>
 
+🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+
+<br>
+
 # Building the Circuit
 <br><br>
 
@@ -292,6 +300,10 @@ With the hardware connected, let's program the Arduino to talk to the sensor and
   
 > [!NOTE]
 > Why we need it: These libraries contain all the specific commands needed to communicate with the BME280, so we don't have to write them from scratch.  
+
+<br>
+
+🏃‍♂️:[Jump back to the Glossary](#Glossary)  
 
 <br>
 
@@ -568,10 +580,16 @@ void loop() {
 </details>
 <br>
 
+🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+
+<br>
+
+
 ****************************************************************
 ****************************************************************
 </details>
 <br>
+
 
 
 <details><summary> 
@@ -621,6 +639,12 @@ void loop()
         printValues();
 }
 ```   
+
+<br>
+
+🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+
+<br>
 
 ****************************************************************
 ****************************************************************
@@ -734,6 +758,10 @@ void loop()
 
 <br>
 
+🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+
+<br>
+
 ****************
 
 </details>
@@ -741,6 +769,13 @@ void loop()
  <summary id="tm1638">  TM1638</summary> <br><br>
  
  ## TM1638
+
+
+<br>
+
+🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+
+<br>
 
  *************
  
@@ -815,6 +850,10 @@ This makes it ideal for battery-powered projects.
 
 <br>
 
+🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+
+<br>
+
 ******************
 
 <br>
@@ -855,6 +894,11 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 
 <br>
 
+🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+
+<br>
+
+
  ***
  
 </details>
@@ -863,6 +907,13 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
  <summary  id="led-diodes">  Led Diodes</summary><br><br>
  
  # Led Diodes
+
+
+<br>
+
+🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+
+<br>
 
  ***
  
@@ -873,6 +924,12 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
  
  # Resistors
 
+<br>
+
+🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+
+<br>
+
  ***
  
 </details>
@@ -882,6 +939,12 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 
  # Jumper Wires
 
+<br>
+
+🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+
+<br>
+
  ***
  
 </details>
@@ -889,7 +952,14 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 <details>
  <summary id="raspberry-pi">   Raspberry Pi</summary><br><br>
 
- # Raspberry Pi
+ # Raspberry Pi  
+
+ <br>
+
+🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+
+<br>
+
 
  ***
 
@@ -935,5 +1005,12 @@ PORT="/dev/ttyUSB0" && sudo stty -F $PORT 9600 raw -echo 2>&1 && echo $?
 If result is `0` then Arduino indeed is responsive.
 
 <br>
+
+<br>
+
+🏃‍♂️:[Jump back to the Glossary](#Glossary)  
+
+<br>
+
 
 ***
