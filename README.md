@@ -4,7 +4,7 @@
 ## Glossary
   1. [Objective](#Objective)  
   2. [Components List](#Components-List)  
-  3. [Testing Your Circuit: From Code to Arduino via Raspberry Pi](#Testing-Your-Circuit)   
+  3. [Testing Your Circuit](#testing-your-circuit-from-code-to-arduino-via-raspberry-pi)     
   4. [Building the Circuit](#Building-the-Circuit)   
   5. [Choose - step-by-step guide or copy the code](#Choose-the-difficulty-level)   
   6. [Understanding Our Components](#Understanding-Our-Components)  
