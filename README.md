@@ -1,6 +1,17 @@
 
 # Guide 
 
+## Glossary
+  1. [Objective](Objective)  
+  2. [Components List](Components-List)  
+  3. [Testing Your Circuit: From Code to Arduino via Raspberry Pi](Testing-Your-Circuit)   
+  4. [Flow - Part 1](Flow-/-/-Part-1)   
+  5. [Choose - step-by-step guide or copy the code](Choose-the-difficulty-level)   
+  6. [Components - the closer look](Components)  
+  
+  <br>
+  
+
 <br>
 
  # Objective
