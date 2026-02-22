@@ -672,7 +672,8 @@ void loop()
 
 > [!NOTE]
 >
-> 📝 Note: How the TM1638 Communicates  
+> How the TM1638 Communicates  
+>
 > Unlike the BME280 which uses I²C, the TM1638 uses a custom 3-wire interface similar to SPI. Think of it like this:
 >  - STB (Strobe) : "Hey, pay attention!" – tells the module data is coming  
 >  - CLK (Clock) : The rhythm – keeps data transfer synchronized  
@@ -696,7 +697,8 @@ void loop()
   Connect VCC:  
   - Take a red male-to-male jumper wire  
   - Connect one end to the VCC terminal on the TM1638  
-  - Connect the other end to the red (positive) rail on your breadboard  
+  - Connect the other end to the red (positive) rail on your breadboard   
+  
   Connect GND:  
   - Take a black (or blue) male-to-male jumper wire  
   - Connect one end to the GND terminal on the TM1638  
@@ -706,14 +708,17 @@ void loop()
 
 ## Connect the Control Pins  
   Now for the communication lines. We'll use three digital pins on the Arduino. Remember which pins you choose – you'll need them in your code!  
+  
   Connect STB (Strobe):  
   - Take a jumper wire (any color)  
   - Connect one end to the STB terminal on the TM1638  
   - Connect the other end to Arduino digital pin 8  
+  
   Connect CLK (Clock):  
   - Take a jumper wire  
   - Connect one end to the CLK terminal on the TM1638  
   - Connect the other end to Arduino digital pin 9  
+  
   Connect DIO (Data):   
   - Take a jumper wire  
   - Connect one end to the DIO terminal on the TM1638   
