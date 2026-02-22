@@ -40,28 +40,109 @@
 
 <br><br>
 
-# CLI Flow
+# Testing Your Circuit: From Code to Arduino via Raspberry Pi   
 
+Now that you've built your circuit and written a test sketch on your local machine, you'll need to transfer that code to your Raspberry Pi and upload it to your Arduino. This guide walks you through the complete workflow.
 <br>
-In a process of prototyping 
+### What You'll Need
+ - Your local machine with the code you've written  
+ - A Raspberry Pi (connected to the same network)   
+ - Your Arduino board connected to the Raspberry Pi via USB   
 
-- Push the code located on the local machine to Raspberry Pi:  
-```
-  rsync -avp oweley@192.168.1.224/temperature --mkpath
-```   
-- Search for available Arduino libraries:  
-```
-  platformio lib search "keyword"
-```   
-- Install the lib of your choice:  
-```
-  platformio lib install "Adafruit BME280 Sensor"
-```   
-- Upload the code from Raspberry Pi to Arduino:  
-```
+## Step-by-Step Guide  
+<br>
+
+### Step 1: Transfer Your Code to the Raspberry Pi   
+ First, you'll sync your code from your local machine to the Raspberry Pi using rsync. This is more efficient than copying every time – it only transfers changed files.    
+ On your local machine, open a terminal and run:  
+ ``` 
+ rsync -avp pi@<your-pi-address>:/temperature --mkpath
+ ```  
+ > [!NOTE]
+ > Replace:  
+ >
+ > <your-pi-address> with your Raspberry Pi's IP address (e.g., 192.168.1.100)   
+ > The --mkpath flag creates the destination directory if it doesn't exist.   
+ >
+<br>
+
+ ### Step 2: Connect to Your Raspberry Pi   
+  SSH into your Raspberry Pi:  
+  ```
+  ssh pi@<your-pi-address>
+  ```   
+  > [!NOTE]
+  >
+  > Enter your password when prompted (default Raspberry Pi password is 123456).  
+  >
+<br>
+
+ ### Step 3: Navigate to Your Project Directory   
+  Once connected, move into the directory you just created:   
+  ```
+  cd ~/temperature
+  ```  
+ <br>
+
+ ### Step 4: Check for Required Libraries   
+  Your code likely uses external libraries (like for the BME280 sensor). First, search for available libraries that match your needs:   
+  ```  
+  pio lib search "Adafruit BME280 Sensor"  
+  ```  
+ This will show you a list of available libraries with their names, IDs, and descriptions.   
+ <br>
+
+ ### Step 5: Install the Required Libraries   
+ Once you've identified the library you need, install it:   
+ ```
+ pio lib install "Adafruit BME280 Library"
+ ```  
+ You can install multiple libraries at once:  
+ ``` 
+ pio lib install "Adafruit BME280 Library" "Adafruit Unified Sensor"
+ ```  
+ <br>
+
+ ### Step 6: Upload Your Code to Arduino   
+  With the libraries installed, you're ready to upload your code to the Arduino board connected to your Raspberry Pi.  
+  First, identify which port your Arduino is connected to:  
+  ```
+  ls /dev/ttyUSB*
+  ```  
+  Typically, it will be /dev/ttyUSB0 or /dev/ttyUSB1.  
+  Now upload your code:   
+  ```
   pio run -t upload --upload-port /dev/ttyUSB0
-```  
+  ```   
+  > [!NOTE]
+  >
+  > Note: Replace /dev/ttyUSB0 with your actual port if different.   
+  >
 
+  ### Step 7: Monitor the Output   
+  After successful upload, you can monitor the serial output from your Arduino to verify it's working correctly:   
+  ```
+  pio device monitor
+  ```  
+  By default, this connects at 9600 baud. To specify a different baud rate:
+  ```
+  pio device monitor -b 115200
+  ```
+  Press Ctrl+C to exit the monitor.   <br>
+
+  > [!NOTE]
+  >
+  > 📝 Note: What is Baud Rate?  
+  > Baud rate refers to the speed at which data is transmitted over a serial connection. It's measured in bits per second (bps). Think of it like the speaking speed in a conversation – both devices need to   i >    > "speak" at the same speed to understand each other.
+  >
+  > Common baud rates include:  
+  > - 9600: A standard, slower speed (good for basic sensors)  
+  > - 115200: A faster speed (useful for more data-heavy applications)   
+  >
+  > In your Arduino code, you'll see Serial.begin(9600) in the setup() function. The number inside the parentheses must match the baud rate you use with pio device monitor -b. If they don't match, you'll see        > gibberish characters instead of readable data.
+  >
+  <br>
+  
 ***
 
 <br>
