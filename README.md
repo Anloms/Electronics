@@ -67,40 +67,56 @@ Now that you've built your circuit and written a test sketch on your local machi
 <br>
 
  ### Step 2: Connect to Your Raspberry Pi   
+
+<br>
+  <details>
+   <summary>
+   
+   ### First-Time Setup: Enable Passwordless SSH 
+  </summary>
   
-  ### First-Time Setup: Enable Passwordless SSH   
-  Before connecting, you'll want to set up passwordless SSH access. This saves you from typing your password every time you connect or run rsync.   
+  <br>
   
-  On your local machine, check if you already have an SSH key:  
-  ```
-  ls ~/.ssh/id_rsa.pub
-  ```   
-  If you see an error, generate a new SSH key:  
-  ```
-  ssh-keygen -t rsa -b 4096 -C "your-email@example.com"
-  ```  
-  Press Enter to accept the default file location. You can optionally set a passphrase (or leave it empty for no passphrase).   
-  Now, copy your public key to the Raspberry Pi.    
-  Open the public key location, select the key and copy it  
-  ```
-  vim ~/.ssh/id_rsa.pub
-  ```   
-  SSH into your Raspberry Pi:  
-  ```
-  ssh pi@<your-pi-address>
-  ```   
-  > [!NOTE]
-  >
-  > Enter your password when prompted (default Raspberry Pi password is 123456).  
-  >
+    Before connecting, you'll want to set up passwordless SSH access. This saves you from typing your password every time you connect or run rsync.  
+    On your local machine, check if you already have an SSH key:  
+    ```
+    ls ~/.ssh/id_rsa.pub
+    ```   
+    If you see an error, generate a new SSH key:  
+    ```
+    ssh-keygen -t rsa -b 4096 -C "your-email@example.com"
+    ```  
+    Press Enter to accept the default file location. You can optionally set a passphrase (or leave it empty for no passphrase).   
+    Now, copy your public key to the Raspberry Pi.    
+    Open the public key location, select the key and copy it  
+    ```
+    vim ~/.ssh/id_rsa.pub
+    ```   
+    SSH into your Raspberry Pi:  
+    ```
+    ssh pi@<your-pi-address>
+    ```   
+    > [!NOTE]
+    >
+    > Enter your password when prompted (default Raspberry Pi password is 123456).  
+    >
   
-  Navigate to `authorized_keys`    
-  ```
-  vim ~/.ssh/authorized_keys
-  ```  
-  And paste your saved public key. Press `:` and enter `wq` to save and exit. Now you can log in without manually entering your password.   
-  
- 
+    Navigate to `authorized_keys`    
+    ```
+    vim ~/.ssh/authorized_keys
+    ```  
+    And paste your saved public key. Press `:` and enter `wq` to save and exit. Now you can log in without manually entering your password.   
+
+    ***
+    
+   </details> <br>
+    
+   SSH into your Raspberry Pi:  
+   
+    ```
+    ssh pi@<your-pi-address>
+    ``` 
+ <br>
 
  ### Step 3: Navigate to Your Project Directory   
   Once connected, move into the directory you just created:   
