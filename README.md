@@ -9,9 +9,10 @@
   1. [Objective](#Objective)  
   2. [Components List](#Components-List)  
   3. [Testing Your Circuit](#testing-your-circuit-from-code-to-arduino-via-raspberry-pi)     
-  4. [Building the Circuit](#Building-the-Circuit)   
-  5. [Choose - step-by-step guide or copy the code](#Choose-the-difficulty-level)   
-  6. [Understanding Our Components](#Understanding-Our-Components)  
+  4. [Building the BME280 Circuit](#Building-the-BME280-Circuit)   
+  5. [Choose - step-by-step guide or copy the code](#Choose-the-difficulty-level) 
+  6. [Building the TM1638 Circuit: Display and LEDs](#Building-the-TM1638-Circuit-Display-and-LEDs)  
+  7. [Understanding Our Components](#Understanding-Our-Components)  
   
   <br>
   
@@ -215,7 +216,7 @@ Now that you've built your circuit and written a test sketch on your local machi
 
 <br>
 
-# Building the Circuit
+# Building the BME280 Circuit
 <br><br>
 
 ### Setting Up Your Breadboard and Arduino
@@ -666,7 +667,86 @@ void loop()
 <br>
 <br>
 
- 
+# Building the TM1638 Circuit: Display and LEDs  
+  Now that your BME280 sensor is working, we'll expand your circuit to include visual output. The TM1638 module gives you both an 8-digit seven-segment display and 8 individual LEDs – perfect for showing sensor readings in a more engaging way.   
+
+> [!NOTE]
+>
+> 📝 Note: How the TM1638 Communicates  
+> Unlike the BME280 which uses I²C, the TM1638 uses a custom 3-wire interface similar to SPI. Think of it like this:
+>  - STB (Strobe) : "Hey, pay attention!" – tells the module data is coming  
+>  - CLK (Clock) : The rhythm – keeps data transfer synchronized  
+>  - DIO (Data) : The actual information being sent   
+>  This 3-wire setup lets you control both the display segments and individual LEDs with just three Arduino pins.   
+>
+
+## Prepare your breadboard  
+
+- Remember the diode we used for initial testing? It's time to remove it  
+- Check that you still have:  
+    - ✅ BME280 connected properly (VCC, GND, SDA to A4, SCL to A5)  
+    - ✅ Power rails still connected to Arduino (5V and GND)  
+
+<br>
+
+## Place the TM1638 Module  
+
+## Connect Power to the TM1638  
+  Just like the BME280, the TM1638 needs power:  
+  Connect VCC:  
+  - Take a red male-to-male jumper wire  
+  - Connect one end to the VCC terminal on the TM1638  
+  - Connect the other end to the red (positive) rail on your breadboard  
+  Connect GND:  
+  - Take a black (or blue) male-to-male jumper wire  
+  - Connect one end to the GND terminal on the TM1638  
+  - Connect the other end to the blue (negative) rail on your breadboard  
+
+<br> 
+
+## Connect the Control Pins  
+  Now for the communication lines. We'll use three digital pins on the Arduino. Remember which pins you choose – you'll need them in your code!  
+  Connect STB (Strobe):  
+  - Take a jumper wire (any color)  
+  - Connect one end to the STB terminal on the TM1638  
+  - Connect the other end to Arduino digital pin 8  
+  Connect CLK (Clock):  
+  - Take a jumper wire  
+  - Connect one end to the CLK terminal on the TM1638  
+  - Connect the other end to Arduino digital pin 9  
+  Connect DIO (Data):   
+  - Take a jumper wire  
+  - Connect one end to the DIO terminal on the TM1638   
+  - Connect the other end to Arduino digital pin 10   
+
+  > [!NOTE]
+  >
+  >  Pin Selection  
+  >
+  > We're using pins 8, 9, and 10 because:  
+  > - They're standard digital pins (not special function pins)  
+  > - They're grouped together for neat wiring  
+  > - They don't conflict with the BME280's I²C pins (A4/A5)  
+  >
+  > You can use different pins if needed – just update your code accordingly.  
+  > 
+  
+## 💡 What Your Complete Circuit Can Do  
+You now have a powerful combination:  
+- BME280 reads temperature, humidity, and pressure from the environment  
+- TM1638 can display this data on its seven-segment display   
+- 8 individual LEDs on the TM1638 can show visual alerts (like "too hot" or "humidity high")  
+
+Everything shares the same power and ground rails – clean and organized!  
+
+<br>
+
+
+<br>
+
+🏃‍♂️ [Jump back to the Glossary](#Table-of-Contents)  
+
+<br>
 
 # Understanding Our Components    
 
