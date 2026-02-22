@@ -5,7 +5,7 @@
 
 <br><br>
 
-## Glossary
+## Table of Contents
   1. [Objective](#Objective)  
   2. [Components List](#Components-List)  
   3. [Testing Your Circuit](#testing-your-circuit-from-code-to-arduino-via-raspberry-pi)     
@@ -53,9 +53,11 @@
 |8 | Raspberry Pi   | A full mini-computer (with an operating system!) that can do everything from running code to browsing the web. In this workshop, it serves as the intermediary between the school's machine and Arduino. |<img alt="Raspberry Pi 3, model B+" src="https://github.com/Anloms/Electronics/blob/main/Pi_3.png"/>  | [Learn more about Raspberry Pi ](#raspberry-pi) |  
 |9 | Breadboard | A breadboard is a reusable platform for building and testing electronic circuits without soldering. Think of it as a prototyping playground where components can be easily plugged in, moved around, and reused. | <img alt="Breadboard" src="https://github.com/Anloms/Electronics/blob/main/Resources/breadboard_2.png"/> | [Learn more about Breadboards](#breadboard) |
 
-<br><br>
+<br>
 
-🏃‍♂️ [Jump back to the Glossary](#Glossary)  
+<br>
+
+🏃‍♂️ [Jump back to the Glossary](#Table-of-Contents)  
 
 <br>
 
@@ -206,9 +208,10 @@ Now that you've built your circuit and written a test sketch on your local machi
 ***
 
 <br>
+
 <br>
 
-🏃‍♂️ [Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Table-of-Contents)  
 
 <br>
 
@@ -305,11 +308,13 @@ With the hardware connected, let's program the Arduino to talk to the sensor and
 > [!NOTE]
 > Why we need it: These libraries contain all the specific commands needed to communicate with the BME280, so we don't have to write them from scratch.  
 
-<br>
-
-🏃‍♂️ [Jump back to the Glossary](#Glossary)  
 
 <br>
+
+🏃‍♂️ [Jump back to the Glossary](#Table-of-Contents)  
+
+<br>
+
 
 # Choose the difficulty level
 <br>
@@ -582,11 +587,13 @@ void loop() {
 
 </details>
 </details>
-<br>
-
-🏃‍♂️:[Jump back to the Glossary](#Glossary)  
 
 <br>
+
+🏃‍♂️ [Jump back to the Glossary](#Table-of-Contents)  
+
+<br>
+
 
 
 ****************************************************************
@@ -646,9 +653,10 @@ void loop()
 
 <br>
 
-🏃‍♂️ [Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Table-of-Contents)  
 
 <br>
+
 
 ****************************************************************
 ****************************************************************
@@ -760,11 +768,13 @@ void loop()
   ### Useful links  
   - [More about pins](https://leecuriosity.com/arduino-nano-pinout-full-guide-for-beginners/)  
 
-<br>
-
-🏃‍♂️ [Jump back to the Glossary](#Glossary)  
 
 <br>
+
+🏃‍♂️ [Jump back to the Glossary](#Table-of-Contents)  
+
+<br>
+
 
 ****************
 
@@ -774,12 +784,12 @@ void loop()
  
  ## TM1638
 
+<br>
+
+🏃‍♂️ [Jump back to the Glossary](#Table-of-Contents)  
 
 <br>
 
-🏃‍♂️ [Jump back to the Glossary](#Glossary)  
-
-<br>
 
  *************
  
@@ -854,7 +864,7 @@ This makes it ideal for battery-powered projects.
 
 <br>
 
-🏃‍♂️ [Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Table-of-Contents)  
 
 <br>
 
@@ -898,10 +908,9 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 
 <br>
 
-🏃‍♂️ [Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Table-of-Contents)  
 
 <br>
-
 
  ***
  
@@ -915,7 +924,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 
 <br>
 
-🏃‍♂️ [Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Table-of-Contents)  
 
 <br>
 
@@ -930,7 +939,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 
 <br>
 
-🏃‍♂️ [Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Table-of-Contents)  
 
 <br>
 
@@ -945,7 +954,7 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 
 <br>
 
-🏃‍♂️ [Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Table-of-Contents)  
 
 <br>
 
@@ -958,12 +967,11 @@ The long columns marked with red (+) and blue (-) lines run the entire length of
 
  # Raspberry Pi  
 
- <br>
-
-🏃‍♂️ [Jump back to the Glossary](#Glossary)  
-
 <br>
 
+🏃‍♂️ [Jump back to the Glossary](#Table-of-Contents)  
+
+<br>
 
  ***
 
@@ -1012,9 +1020,8 @@ If result is `0` then Arduino indeed is responsive.
 
 <br>
 
-🏃‍♂️ [Jump back to the Glossary](#Glossary)  
+🏃‍♂️ [Jump back to the Glossary](#Table-of-Contents)  
 
 <br>
-
 
 ***
