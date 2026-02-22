@@ -1,5 +1,9 @@
 
-# Guide 
+# LAB MANUAL  
+
+## Input/Output Workshop: Reading Environment Data, Visualizing with LEDs   
+
+<br><br>
 
 ## Glossary
   1. [Objective](#Objective)  
